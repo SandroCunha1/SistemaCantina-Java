@@ -16,6 +16,11 @@ public class Vendas {
     private char flag, status;
     private float valorDesconto;
 
+    public Vendas() {
+    }
+
+    
+    
     public Vendas(Funcionario funcionario, int id, String observacao, String dataVenda, char flag, char status, float valorDesconto) {
         this.funcionario = funcionario;
         this.id = id;

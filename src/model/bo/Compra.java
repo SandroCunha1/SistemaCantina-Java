@@ -16,6 +16,11 @@ public class Compra {
     private char flagTipo, status;
     private float valorDesc;
 
+    public Compra() {
+    }
+
+    
+    
     public Compra(Fornecedor fonrecedor, int id, int numeronf, String dataHoraCompra, String obcervacao, char flagTipo, char status, float valorDesc) {
         this.fonrecedor = fonrecedor;
         this.id = id;

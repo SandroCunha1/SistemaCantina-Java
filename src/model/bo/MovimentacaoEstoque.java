@@ -19,6 +19,11 @@ public class MovimentacaoEstoque {
     private float qntMovimentada;
     private char flag, status;
 
+    public MovimentacaoEstoque() {
+    }
+
+    
+    
     public MovimentacaoEstoque(Funcionario funcionario, Produto produto, ItemVenda itemVenda, ItemCompra itemCompra, int id, String dataHoraMovimento, String obcervacaoMovimento, float qntMovimentada, char flag, char status) {
         this.funcionario = funcionario;
         this.produto = produto;

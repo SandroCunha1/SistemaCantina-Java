@@ -14,6 +14,11 @@ public class Produto {
     private int id;
     private char status;
 
+    public Produto() {
+    }
+
+    
+    
     public Produto(String descricao, String codigoBarra, int id, char status) {
         this.descricao = descricao;
         this.codigoBarra = codigoBarra;
