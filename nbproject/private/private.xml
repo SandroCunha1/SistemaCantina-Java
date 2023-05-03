@@ -3,24 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/aluno/Desktop/SistemaCantina/src/model/bo/ItemCompra.java</file>
-            <file>file:/C:/Users/aluno/Desktop/SistemaCantina/src/model/bo/Carteirinha.java</file>
-            <file>file:/C:/Users/aluno/Desktop/SistemaCantina/src/view/TestejFrame.java</file>
-            <file>file:/C:/Users/aluno/Desktop/SistemaCantina/src/model/bo/MovimentaCaixa.java</file>
-            <file>file:/C:/Users/aluno/Desktop/SistemaCantina/src/model/bo/ItemVenda.java</file>
-            <file>file:/C:/Users/aluno/Desktop/SistemaCantina/src/model/bo/Contas.java</file>
-            <file>file:/C:/Users/aluno/Desktop/SistemaCantina/src/model/bo/Funcionario.java</file>
-            <file>file:/C:/Users/aluno/Desktop/SistemaCantina/src/model/bo/Fornecedor.java</file>
-            <file>file:/C:/Users/aluno/Desktop/SistemaCantina/src/model/bo/Produto.java</file>
-            <file>file:/C:/Users/aluno/Desktop/SistemaCantina/src/model/bo/Vendas.java</file>
-            <file>file:/C:/Users/aluno/Desktop/SistemaCantina/src/model/bo/MovimentacaoEstoque.java</file>
-            <file>file:/C:/Users/aluno/Desktop/SistemaCantina/src/model/bo/Bairro.java</file>
-            <file>file:/C:/Users/aluno/Desktop/SistemaCantina/src/model/bo/Caixa.java</file>
-            <file>file:/C:/Users/aluno/Desktop/SistemaCantina/src/model/bo/Cidade.java</file>
-            <file>file:/C:/Users/aluno/Desktop/SistemaCantina/src/model/bo/Pessoa.java</file>
-            <file>file:/C:/Users/aluno/Desktop/SistemaCantina/src/model/bo/Endereco.java</file>
-            <file>file:/C:/Users/aluno/Desktop/SistemaCantina/src/model/bo/Compra.java</file>
-            <file>file:/C:/Users/aluno/Desktop/SistemaCantina/src/model/bo/Cliente.java</file>
+            <file>file:/D:/Users/sandr/Área%20de%20Trabalho/Cursos/IFSC%20-%20ADS/Prática/SistemaCantina/src/view/CadastroCliente.java</file>
+            <file>file:/D:/Users/sandr/Área%20de%20Trabalho/Cursos/IFSC%20-%20ADS/Prática/SistemaCantina/src/view/images/seasons-cozy-coffee-shop-with-pastries-1.png</file>
+            <file>file:/D:/Users/sandr/Área%20de%20Trabalho/Cursos/IFSC%20-%20ADS/Prática/SistemaCantina/src/view/icons/formulario-de-contato%20(1).png</file>
+            <file>file:/D:/Users/sandr/Área%20de%20Trabalho/Cursos/IFSC%20-%20ADS/Prática/SistemaCantina/src/view/TemplateCadastro.java</file>
         </group>
     </open-files>
 </project-private>
