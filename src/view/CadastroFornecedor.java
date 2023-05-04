@@ -150,7 +150,7 @@ public class CadastroFornecedor extends javax.swing.JFrame {
         jPanel1.add(txtCNPJ, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 100, 150, -1));
 
         lblInscricao.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblInscricao.setText("Inscrição Estadual");
+        lblInscricao.setText("Inscrição estadual");
         jPanel1.add(lblInscricao, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 70, 120, 30));
         jPanel1.add(txtInscricao, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 100, 120, -1));
 
