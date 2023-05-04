@@ -13,12 +13,12 @@ import javax.swing.JFrame;
  *
  * @author aluno
  */
-public class CadastroCliente extends javax.swing.JFrame {
+public class CadastroFornecedor extends javax.swing.JFrame {
 
     /**
      * Creates new form TestejFrame
      */
-    public CadastroCliente() {
+    public CadastroFornecedor() {
         initComponents();
         
 
@@ -41,14 +41,14 @@ public class CadastroCliente extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         lblID = new javax.swing.JLabel();
         txtId = new javax.swing.JTextField();
+        lblRazaoSocial = new javax.swing.JLabel();
+        txtRazao = new javax.swing.JTextField();
+        lblCPF = new javax.swing.JLabel();
+        txtCNPJ = new javax.swing.JFormattedTextField();
+        lblInscricao = new javax.swing.JLabel();
+        txtInscricao = new javax.swing.JTextField();
         lblNome = new javax.swing.JLabel();
         txtNome = new javax.swing.JTextField();
-        lblCPF = new javax.swing.JLabel();
-        txtCPF = new javax.swing.JFormattedTextField();
-        lblRG = new javax.swing.JLabel();
-        txtRG = new javax.swing.JTextField();
-        lblMatricula = new javax.swing.JLabel();
-        txtMatricula = new javax.swing.JTextField();
         lblEmail = new javax.swing.JLabel();
         txtEmail = new javax.swing.JTextField();
         lblAniver = new javax.swing.JLabel();
@@ -88,7 +88,7 @@ public class CadastroCliente extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/formulario-de-contato (1).png"))); // NOI18N
-        jLabel1.setText("   Cadastro de cliente");
+        jLabel1.setText("   Cadastro de fornecedor");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -126,38 +126,38 @@ public class CadastroCliente extends javax.swing.JFrame {
         });
         jPanel1.add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 50, -1));
 
-        lblNome.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblNome.setText("Nome");
-        jPanel1.add(lblNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 50, 30));
+        lblRazaoSocial.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lblRazaoSocial.setText("Razão social");
+        jPanel1.add(lblRazaoSocial, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 100, 30));
 
-        txtNome.setMaximumSize(new java.awt.Dimension(64, 22));
-        txtNome.addActionListener(new java.awt.event.ActionListener() {
+        txtRazao.setMaximumSize(new java.awt.Dimension(64, 22));
+        txtRazao.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNomeActionPerformed(evt);
+                txtRazaoActionPerformed(evt);
             }
         });
-        jPanel1.add(txtNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 290, -1));
+        jPanel1.add(txtRazao, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 290, -1));
 
         lblCPF.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblCPF.setText("CPF");
+        lblCPF.setText("CNPJ");
         jPanel1.add(lblCPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 70, 50, 30));
 
         try {
-            txtCPF.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
+            txtCNPJ.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##.###.###/####-##")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
-        jPanel1.add(txtCPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 100, 120, -1));
+        jPanel1.add(txtCNPJ, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 100, 150, -1));
 
-        lblRG.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblRG.setText("RG");
-        jPanel1.add(lblRG, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 70, 50, 30));
-        jPanel1.add(txtRG, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, 120, -1));
+        lblInscricao.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lblInscricao.setText("Inscrição Estadual");
+        jPanel1.add(lblInscricao, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 70, 120, 30));
+        jPanel1.add(txtInscricao, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 100, 120, -1));
 
-        lblMatricula.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblMatricula.setText("Matricula");
-        jPanel1.add(lblMatricula, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 70, 100, 30));
-        jPanel1.add(txtMatricula, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 100, 210, -1));
+        lblNome.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lblNome.setText("Nome");
+        jPanel1.add(lblNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 70, 100, 30));
+        jPanel1.add(txtNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 100, 180, -1));
 
         lblEmail.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblEmail.setText("E-mail");
@@ -339,9 +339,9 @@ public class CadastroCliente extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtEmailActionPerformed
 
-    private void txtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeActionPerformed
+    private void txtRazaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRazaoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtNomeActionPerformed
+    }//GEN-LAST:event_txtRazaoActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
@@ -368,13 +368,13 @@ public class CadastroCliente extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CadastroCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroFornecedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CadastroCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroFornecedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CadastroCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroFornecedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CadastroCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroFornecedor.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -388,7 +388,7 @@ public class CadastroCliente extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CadastroCliente().setVisible(true);
+                new CadastroFornecedor().setVisible(true);
             }
         });
     }
@@ -416,23 +416,23 @@ public class CadastroCliente extends javax.swing.JFrame {
     private javax.swing.JLabel lblFone1;
     private javax.swing.JLabel lblFone2;
     private javax.swing.JLabel lblID;
+    private javax.swing.JLabel lblInscricao;
     private javax.swing.JLabel lblLogradouro;
-    private javax.swing.JLabel lblMatricula;
     private javax.swing.JLabel lblNome;
-    private javax.swing.JLabel lblRG;
+    private javax.swing.JLabel lblRazaoSocial;
     private javax.swing.JFormattedTextField txtAniver;
     private javax.swing.JTextField txtBairro;
     private javax.swing.JFormattedTextField txtCEP;
-    private javax.swing.JFormattedTextField txtCPF;
+    private javax.swing.JFormattedTextField txtCNPJ;
     private javax.swing.JTextField txtCidade;
     private javax.swing.JTextField txtComplemento;
     private javax.swing.JTextField txtEmail;
     private javax.swing.JFormattedTextField txtFone1;
     private javax.swing.JFormattedTextField txtFone2;
     private javax.swing.JTextField txtId;
+    private javax.swing.JTextField txtInscricao;
     private javax.swing.JTextField txtLogradouro;
-    private javax.swing.JTextField txtMatricula;
     private javax.swing.JTextField txtNome;
-    private javax.swing.JTextField txtRG;
+    private javax.swing.JTextField txtRazao;
     // End of variables declaration//GEN-END:variables
 }

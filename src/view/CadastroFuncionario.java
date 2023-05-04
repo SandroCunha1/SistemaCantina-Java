@@ -13,12 +13,12 @@ import javax.swing.JFrame;
  *
  * @author aluno
  */
-public class CadastroCliente extends javax.swing.JFrame {
+public class CadastroFuncionario extends javax.swing.JFrame {
 
     /**
      * Creates new form TestejFrame
      */
-    public CadastroCliente() {
+    public CadastroFuncionario() {
         initComponents();
         
 
@@ -47,8 +47,6 @@ public class CadastroCliente extends javax.swing.JFrame {
         txtCPF = new javax.swing.JFormattedTextField();
         lblRG = new javax.swing.JLabel();
         txtRG = new javax.swing.JTextField();
-        lblMatricula = new javax.swing.JLabel();
-        txtMatricula = new javax.swing.JTextField();
         lblEmail = new javax.swing.JLabel();
         txtEmail = new javax.swing.JTextField();
         lblAniver = new javax.swing.JLabel();
@@ -67,6 +65,12 @@ public class CadastroCliente extends javax.swing.JFrame {
         txtCidade = new javax.swing.JTextField();
         lblBairro = new javax.swing.JLabel();
         txtBairro = new javax.swing.JTextField();
+        lblCEP2 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        lblSenha = new javax.swing.JLabel();
+        lblConfirm = new javax.swing.JLabel();
+        jPasswordField1 = new javax.swing.JPasswordField();
+        jPasswordField2 = new javax.swing.JPasswordField();
         jPanel4 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -88,7 +92,7 @@ public class CadastroCliente extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/formulario-de-contato (1).png"))); // NOI18N
-        jLabel1.setText("   Cadastro de cliente");
+        jLabel1.setText("   Cadastro de funcionário");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -153,11 +157,6 @@ public class CadastroCliente extends javax.swing.JFrame {
         lblRG.setText("RG");
         jPanel1.add(lblRG, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 70, 50, 30));
         jPanel1.add(txtRG, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, 120, -1));
-
-        lblMatricula.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblMatricula.setText("Matricula");
-        jPanel1.add(lblMatricula, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 70, 100, 30));
-        jPanel1.add(txtMatricula, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 100, 210, -1));
 
         lblEmail.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblEmail.setText("E-mail");
@@ -241,6 +240,27 @@ public class CadastroCliente extends javax.swing.JFrame {
         txtBairro.setEnabled(false);
         jPanel1.add(txtBairro, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 260, 160, -1));
 
+        lblCEP2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lblCEP2.setText("Usuário");
+        jPanel1.add(lblCEP2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, 70, 30));
+
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, 330, -1));
+
+        lblSenha.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lblSenha.setText("Senha");
+        jPanel1.add(lblSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 310, 70, 30));
+
+        lblConfirm.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lblConfirm.setText("Confirmar senha");
+        jPanel1.add(lblConfirm, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 310, 110, 30));
+        jPanel1.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 340, 210, -1));
+        jPanel1.add(jPasswordField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 340, 210, -1));
+
         jPanel4.setBackground(new java.awt.Color(167, 175, 198));
         jPanel4.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 40, 35));
 
@@ -303,7 +323,7 @@ public class CadastroCliente extends javax.swing.JFrame {
             jPanelFormulárioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelFormulárioLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 388, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -351,6 +371,10 @@ public class CadastroCliente extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton6ActionPerformed
 
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -368,13 +392,13 @@ public class CadastroCliente extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CadastroCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroFuncionario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CadastroCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroFuncionario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CadastroCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroFuncionario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CadastroCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroFuncionario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -388,7 +412,7 @@ public class CadastroCliente extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CadastroCliente().setVisible(true);
+                new CadastroFuncionario().setVisible(true);
             }
         });
     }
@@ -406,20 +430,25 @@ public class CadastroCliente extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanelFormulário;
+    private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JPasswordField jPasswordField2;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lblAniver;
     private javax.swing.JLabel lblBairro;
     private javax.swing.JLabel lblCEP;
+    private javax.swing.JLabel lblCEP2;
     private javax.swing.JLabel lblCPF;
     private javax.swing.JLabel lblCidade;
     private javax.swing.JLabel lblComplemento;
+    private javax.swing.JLabel lblConfirm;
     private javax.swing.JLabel lblEmail;
     private javax.swing.JLabel lblFone1;
     private javax.swing.JLabel lblFone2;
     private javax.swing.JLabel lblID;
     private javax.swing.JLabel lblLogradouro;
-    private javax.swing.JLabel lblMatricula;
     private javax.swing.JLabel lblNome;
     private javax.swing.JLabel lblRG;
+    private javax.swing.JLabel lblSenha;
     private javax.swing.JFormattedTextField txtAniver;
     private javax.swing.JTextField txtBairro;
     private javax.swing.JFormattedTextField txtCEP;
@@ -431,7 +460,6 @@ public class CadastroCliente extends javax.swing.JFrame {
     private javax.swing.JFormattedTextField txtFone2;
     private javax.swing.JTextField txtId;
     private javax.swing.JTextField txtLogradouro;
-    private javax.swing.JTextField txtMatricula;
     private javax.swing.JTextField txtNome;
     private javax.swing.JTextField txtRG;
     // End of variables declaration//GEN-END:variables

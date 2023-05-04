@@ -13,12 +13,12 @@ import javax.swing.JFrame;
  *
  * @author aluno
  */
-public class CadastroCliente extends javax.swing.JFrame {
+public class CadastroBairro extends javax.swing.JFrame {
 
     /**
      * Creates new form TestejFrame
      */
-    public CadastroCliente() {
+    public CadastroBairro() {
         initComponents();
         
 
@@ -42,31 +42,8 @@ public class CadastroCliente extends javax.swing.JFrame {
         lblID = new javax.swing.JLabel();
         txtId = new javax.swing.JTextField();
         lblNome = new javax.swing.JLabel();
-        txtNome = new javax.swing.JTextField();
-        lblCPF = new javax.swing.JLabel();
-        txtCPF = new javax.swing.JFormattedTextField();
-        lblRG = new javax.swing.JLabel();
-        txtRG = new javax.swing.JTextField();
-        lblMatricula = new javax.swing.JLabel();
-        txtMatricula = new javax.swing.JTextField();
-        lblEmail = new javax.swing.JLabel();
-        txtEmail = new javax.swing.JTextField();
-        lblAniver = new javax.swing.JLabel();
-        txtAniver = new javax.swing.JFormattedTextField();
-        lblFone1 = new javax.swing.JLabel();
-        txtFone1 = new javax.swing.JFormattedTextField();
-        lblFone2 = new javax.swing.JLabel();
-        txtFone2 = new javax.swing.JFormattedTextField();
-        lblLogradouro = new javax.swing.JLabel();
-        lblComplemento = new javax.swing.JLabel();
-        txtLogradouro = new javax.swing.JTextField();
-        lblCEP = new javax.swing.JLabel();
-        txtCEP = new javax.swing.JFormattedTextField();
-        txtComplemento = new javax.swing.JTextField();
-        lblCidade = new javax.swing.JLabel();
-        txtCidade = new javax.swing.JTextField();
-        lblBairro = new javax.swing.JLabel();
-        txtBairro = new javax.swing.JTextField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
         jPanel4 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -77,7 +54,7 @@ public class CadastroCliente extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Catina do Zé  - Login");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setPreferredSize(new java.awt.Dimension(1000, 667));
+        setPreferredSize(new java.awt.Dimension(1000, 500));
         setResizable(false);
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
@@ -88,7 +65,7 @@ public class CadastroCliente extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/formulario-de-contato (1).png"))); // NOI18N
-        jLabel1.setText("   Cadastro de cliente");
+        jLabel1.setText("   Cadastro de bairro");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -127,119 +104,14 @@ public class CadastroCliente extends javax.swing.JFrame {
         jPanel1.add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 50, -1));
 
         lblNome.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblNome.setText("Nome");
-        jPanel1.add(lblNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 50, 30));
+        lblNome.setText("Descrição");
+        jPanel1.add(lblNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 80, 30));
 
-        txtNome.setMaximumSize(new java.awt.Dimension(64, 22));
-        txtNome.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNomeActionPerformed(evt);
-            }
-        });
-        jPanel1.add(txtNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 290, -1));
+        jTextArea1.setColumns(20);
+        jTextArea1.setRows(5);
+        jScrollPane1.setViewportView(jTextArea1);
 
-        lblCPF.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblCPF.setText("CPF");
-        jPanel1.add(lblCPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 70, 50, 30));
-
-        try {
-            txtCPF.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        jPanel1.add(txtCPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 100, 120, -1));
-
-        lblRG.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblRG.setText("RG");
-        jPanel1.add(lblRG, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 70, 50, 30));
-        jPanel1.add(txtRG, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, 120, -1));
-
-        lblMatricula.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblMatricula.setText("Matricula");
-        jPanel1.add(lblMatricula, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 70, 100, 30));
-        jPanel1.add(txtMatricula, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 100, 210, -1));
-
-        lblEmail.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblEmail.setText("E-mail");
-        jPanel1.add(lblEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 50, 30));
-
-        txtEmail.setMaximumSize(new java.awt.Dimension(64, 22));
-        txtEmail.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtEmailActionPerformed(evt);
-            }
-        });
-        jPanel1.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 290, -1));
-
-        lblAniver.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblAniver.setText("Aniversário");
-        jPanel1.add(lblAniver, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 150, 120, 30));
-
-        try {
-            txtAniver.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        jPanel1.add(txtAniver, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 180, 120, -1));
-
-        lblFone1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblFone1.setText("Telefone 1");
-        jPanel1.add(lblFone1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 150, 120, 30));
-
-        try {
-            txtFone1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("## #####-####")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        jPanel1.add(txtFone1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 180, 160, -1));
-
-        lblFone2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblFone2.setText("Telefone 2");
-        jPanel1.add(lblFone2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 150, 120, 30));
-
-        try {
-            txtFone2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("## #####-####")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        jPanel1.add(txtFone2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 180, 170, -1));
-
-        lblLogradouro.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblLogradouro.setText("Logradouro");
-        jPanel1.add(lblLogradouro, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 230, 120, 30));
-
-        lblComplemento.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblComplemento.setText("Complemento");
-        jPanel1.add(lblComplemento, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 230, 120, 30));
-
-        txtLogradouro.setEnabled(false);
-        jPanel1.add(txtLogradouro, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 260, 170, -1));
-
-        lblCEP.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblCEP.setText("CEP");
-        jPanel1.add(lblCEP, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, 30, 30));
-
-        try {
-            txtCEP.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#####-###")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        jPanel1.add(txtCEP, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 80, -1));
-        jPanel1.add(txtComplemento, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 260, 170, -1));
-
-        lblCidade.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblCidade.setText("Cidade");
-        jPanel1.add(lblCidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 230, 120, 30));
-
-        txtCidade.setEnabled(false);
-        jPanel1.add(txtCidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 260, 150, -1));
-
-        lblBairro.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblBairro.setText("Bairro");
-        jPanel1.add(lblBairro, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 230, 120, 30));
-
-        txtBairro.setEnabled(false);
-        jPanel1.add(txtBairro, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 260, 160, -1));
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 780, -1));
 
         jPanel4.setBackground(new java.awt.Color(167, 175, 198));
         jPanel4.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 40, 35));
@@ -302,9 +174,9 @@ public class CadastroCliente extends javax.swing.JFrame {
         jPanelFormulárioLayout.setVerticalGroup(
             jPanelFormulárioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelFormulárioLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -335,14 +207,6 @@ public class CadastroCliente extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtIdActionPerformed
 
-    private void txtEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmailActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtEmailActionPerformed
-
-    private void txtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtNomeActionPerformed
-
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
@@ -368,13 +232,13 @@ public class CadastroCliente extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CadastroCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroBairro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CadastroCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroBairro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CadastroCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroBairro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CadastroCliente.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroBairro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -388,7 +252,7 @@ public class CadastroCliente extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CadastroCliente().setVisible(true);
+                new CadastroBairro().setVisible(true);
             }
         });
     }
@@ -406,33 +270,10 @@ public class CadastroCliente extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanelFormulário;
-    private javax.swing.JLabel lblAniver;
-    private javax.swing.JLabel lblBairro;
-    private javax.swing.JLabel lblCEP;
-    private javax.swing.JLabel lblCPF;
-    private javax.swing.JLabel lblCidade;
-    private javax.swing.JLabel lblComplemento;
-    private javax.swing.JLabel lblEmail;
-    private javax.swing.JLabel lblFone1;
-    private javax.swing.JLabel lblFone2;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JLabel lblID;
-    private javax.swing.JLabel lblLogradouro;
-    private javax.swing.JLabel lblMatricula;
     private javax.swing.JLabel lblNome;
-    private javax.swing.JLabel lblRG;
-    private javax.swing.JFormattedTextField txtAniver;
-    private javax.swing.JTextField txtBairro;
-    private javax.swing.JFormattedTextField txtCEP;
-    private javax.swing.JFormattedTextField txtCPF;
-    private javax.swing.JTextField txtCidade;
-    private javax.swing.JTextField txtComplemento;
-    private javax.swing.JTextField txtEmail;
-    private javax.swing.JFormattedTextField txtFone1;
-    private javax.swing.JFormattedTextField txtFone2;
     private javax.swing.JTextField txtId;
-    private javax.swing.JTextField txtLogradouro;
-    private javax.swing.JTextField txtMatricula;
-    private javax.swing.JTextField txtNome;
-    private javax.swing.JTextField txtRG;
     // End of variables declaration//GEN-END:variables
 }
