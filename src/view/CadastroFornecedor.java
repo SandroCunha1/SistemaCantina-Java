@@ -34,16 +34,16 @@ public class CadastroFornecedor extends javax.swing.JFrame {
     private void initComponents() {
 
         grupoSexo = new javax.swing.ButtonGroup();
-        jPanel2 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jPanelFormulário = new javax.swing.JPanel();
-        jPanel1 = new javax.swing.JPanel();
+        panelTotal = new javax.swing.JPanel();
+        panelTitulo = new javax.swing.JPanel();
+        lblTitulo = new javax.swing.JLabel();
+        panelConteudo = new javax.swing.JPanel();
+        panelCadastro = new javax.swing.JPanel();
         lblID = new javax.swing.JLabel();
         txtId = new javax.swing.JTextField();
         lblRazaoSocial = new javax.swing.JLabel();
         txtRazao = new javax.swing.JTextField();
-        lblCPF = new javax.swing.JLabel();
+        lblCNPJ = new javax.swing.JLabel();
         txtCNPJ = new javax.swing.JFormattedTextField();
         lblInscricao = new javax.swing.JLabel();
         txtInscricao = new javax.swing.JTextField();
@@ -51,28 +51,26 @@ public class CadastroFornecedor extends javax.swing.JFrame {
         txtNome = new javax.swing.JTextField();
         lblEmail = new javax.swing.JLabel();
         txtEmail = new javax.swing.JTextField();
-        lblAniver = new javax.swing.JLabel();
-        txtAniver = new javax.swing.JFormattedTextField();
         lblFone1 = new javax.swing.JLabel();
         txtFone1 = new javax.swing.JFormattedTextField();
         lblFone2 = new javax.swing.JLabel();
         txtFone2 = new javax.swing.JFormattedTextField();
-        lblLogradouro = new javax.swing.JLabel();
-        lblComplemento = new javax.swing.JLabel();
-        txtLogradouro = new javax.swing.JTextField();
         lblCEP = new javax.swing.JLabel();
         txtCEP = new javax.swing.JFormattedTextField();
-        txtComplemento = new javax.swing.JTextField();
         lblCidade = new javax.swing.JLabel();
         txtCidade = new javax.swing.JTextField();
+        lblLogradouro = new javax.swing.JLabel();
+        txtLogradouro = new javax.swing.JTextField();
         lblBairro = new javax.swing.JLabel();
         txtBairro = new javax.swing.JTextField();
-        jPanel4 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        lblComplemento = new javax.swing.JLabel();
+        txtComplemento = new javax.swing.JTextField();
+        panelButtons = new javax.swing.JPanel();
+        btnNovo = new javax.swing.JButton();
+        btnCancelar = new javax.swing.JButton();
+        btnGravar = new javax.swing.JButton();
+        brnBuscar = new javax.swing.JButton();
+        btnSair = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Catina do Zé  - Login");
@@ -81,42 +79,47 @@ public class CadastroFornecedor extends javax.swing.JFrame {
         setResizable(false);
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
-        jPanel2.setBackground(new java.awt.Color(255, 255, 255));
+        panelTotal.setBackground(new java.awt.Color(255, 255, 255));
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
+        panelTitulo.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel1.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 24)); // NOI18N
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/formulario-de-contato (1).png"))); // NOI18N
-        jLabel1.setText("   Cadastro de fornecedor");
+        lblTitulo.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 24)); // NOI18N
+        lblTitulo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        lblTitulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/formulario-de-contato (1).png"))); // NOI18N
+        lblTitulo.setText("   Cadastro de fornecedor");
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(49, 49, 49)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 810, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(13, Short.MAX_VALUE))
+        javax.swing.GroupLayout panelTituloLayout = new javax.swing.GroupLayout(panelTitulo);
+        panelTitulo.setLayout(panelTituloLayout);
+        panelTituloLayout.setHorizontalGroup(
+            panelTituloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 872, Short.MAX_VALUE)
+            .addGroup(panelTituloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panelTituloLayout.createSequentialGroup()
+                    .addGap(31, 31, 31)
+                    .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 810, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(31, Short.MAX_VALUE)))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+        panelTituloLayout.setVerticalGroup(
+            panelTituloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 105, Short.MAX_VALUE)
+            .addGroup(panelTituloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(panelTituloLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
-        jPanelFormulário.setBackground(new java.awt.Color(172, 177, 214));
-        jPanelFormulário.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.white, java.awt.Color.white, java.awt.Color.white, java.awt.Color.white));
+        panelConteudo.setBackground(new java.awt.Color(172, 177, 214));
+        panelConteudo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.white, java.awt.Color.white, java.awt.Color.white, java.awt.Color.white));
 
-        jPanel1.setBackground(new java.awt.Color(167, 175, 198));
-        jPanel1.setMinimumSize(new java.awt.Dimension(800, 312));
-        jPanel1.setPreferredSize(new java.awt.Dimension(800, 312));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        panelCadastro.setBackground(new java.awt.Color(167, 175, 198));
+        panelCadastro.setMinimumSize(new java.awt.Dimension(800, 312));
+        panelCadastro.setPreferredSize(new java.awt.Dimension(800, 312));
+        panelCadastro.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblID.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblID.setText("Id");
-        jPanel1.add(lblID, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 20, 30));
+        panelCadastro.add(lblID, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, 20, 30));
 
         txtId.setEnabled(false);
         txtId.addActionListener(new java.awt.event.ActionListener() {
@@ -124,11 +127,11 @@ public class CadastroFornecedor extends javax.swing.JFrame {
                 txtIdActionPerformed(evt);
             }
         });
-        jPanel1.add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 50, -1));
+        panelCadastro.add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 50, -1));
 
         lblRazaoSocial.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblRazaoSocial.setText("Razão social");
-        jPanel1.add(lblRazaoSocial, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 100, 30));
+        panelCadastro.add(lblRazaoSocial, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 100, 30));
 
         txtRazao.setMaximumSize(new java.awt.Dimension(64, 22));
         txtRazao.addActionListener(new java.awt.event.ActionListener() {
@@ -136,32 +139,32 @@ public class CadastroFornecedor extends javax.swing.JFrame {
                 txtRazaoActionPerformed(evt);
             }
         });
-        jPanel1.add(txtRazao, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 290, -1));
+        panelCadastro.add(txtRazao, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 290, -1));
 
-        lblCPF.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblCPF.setText("CNPJ");
-        jPanel1.add(lblCPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 70, 50, 30));
+        lblCNPJ.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lblCNPJ.setText("CNPJ");
+        panelCadastro.add(lblCNPJ, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 70, 50, 30));
 
         try {
             txtCNPJ.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##.###.###/####-##")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
-        jPanel1.add(txtCNPJ, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 100, 150, -1));
+        panelCadastro.add(txtCNPJ, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 100, 150, -1));
 
         lblInscricao.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblInscricao.setText("Inscrição estadual");
-        jPanel1.add(lblInscricao, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 70, 120, 30));
-        jPanel1.add(txtInscricao, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 100, 120, -1));
+        panelCadastro.add(lblInscricao, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 70, 120, 30));
+        panelCadastro.add(txtInscricao, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 100, 120, -1));
 
         lblNome.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblNome.setText("Nome");
-        jPanel1.add(lblNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 70, 100, 30));
-        jPanel1.add(txtNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 100, 180, -1));
+        panelCadastro.add(lblNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 70, 100, 30));
+        panelCadastro.add(txtNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 100, 180, -1));
 
         lblEmail.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblEmail.setText("E-mail");
-        jPanel1.add(lblEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 50, 30));
+        panelCadastro.add(lblEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 50, 30));
 
         txtEmail.setMaximumSize(new java.awt.Dimension(64, 22));
         txtEmail.addActionListener(new java.awt.event.ActionListener() {
@@ -169,163 +172,152 @@ public class CadastroFornecedor extends javax.swing.JFrame {
                 txtEmailActionPerformed(evt);
             }
         });
-        jPanel1.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 290, -1));
-
-        lblAniver.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblAniver.setText("Aniversário");
-        jPanel1.add(lblAniver, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 150, 120, 30));
-
-        try {
-            txtAniver.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        jPanel1.add(txtAniver, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 180, 120, -1));
+        panelCadastro.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 420, -1));
 
         lblFone1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblFone1.setText("Telefone 1");
-        jPanel1.add(lblFone1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 150, 120, 30));
+        panelCadastro.add(lblFone1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 150, 120, 30));
 
         try {
             txtFone1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("## #####-####")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
-        jPanel1.add(txtFone1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 180, 160, -1));
+        panelCadastro.add(txtFone1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 180, 160, -1));
 
         lblFone2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblFone2.setText("Telefone 2");
-        jPanel1.add(lblFone2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 150, 120, 30));
+        panelCadastro.add(lblFone2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 150, 120, 30));
 
         try {
             txtFone2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("## #####-####")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
-        jPanel1.add(txtFone2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 180, 170, -1));
-
-        lblLogradouro.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblLogradouro.setText("Logradouro");
-        jPanel1.add(lblLogradouro, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 230, 120, 30));
-
-        lblComplemento.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblComplemento.setText("Complemento");
-        jPanel1.add(lblComplemento, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 230, 120, 30));
-
-        txtLogradouro.setEnabled(false);
-        jPanel1.add(txtLogradouro, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 260, 170, -1));
+        panelCadastro.add(txtFone2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 180, 170, -1));
 
         lblCEP.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblCEP.setText("CEP");
-        jPanel1.add(lblCEP, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, 30, 30));
+        panelCadastro.add(lblCEP, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, 30, 30));
 
         try {
             txtCEP.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#####-###")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
-        jPanel1.add(txtCEP, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 80, -1));
-        jPanel1.add(txtComplemento, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 260, 170, -1));
+        panelCadastro.add(txtCEP, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 80, -1));
 
         lblCidade.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblCidade.setText("Cidade");
-        jPanel1.add(lblCidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 230, 120, 30));
+        panelCadastro.add(lblCidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 230, 120, 30));
 
         txtCidade.setEnabled(false);
-        jPanel1.add(txtCidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 260, 150, -1));
+        panelCadastro.add(txtCidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 260, 150, -1));
+
+        lblLogradouro.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lblLogradouro.setText("Logradouro");
+        panelCadastro.add(lblLogradouro, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 230, 120, 30));
+
+        txtLogradouro.setEnabled(false);
+        panelCadastro.add(txtLogradouro, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 260, 170, -1));
 
         lblBairro.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblBairro.setText("Bairro");
-        jPanel1.add(lblBairro, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 230, 120, 30));
+        panelCadastro.add(lblBairro, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 230, 120, 30));
 
         txtBairro.setEnabled(false);
-        jPanel1.add(txtBairro, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 260, 160, -1));
+        panelCadastro.add(txtBairro, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 260, 160, -1));
 
-        jPanel4.setBackground(new java.awt.Color(167, 175, 198));
-        jPanel4.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 40, 35));
+        lblComplemento.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lblComplemento.setText("Complemento");
+        panelCadastro.add(lblComplemento, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 230, 120, 30));
+        panelCadastro.add(txtComplemento, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 260, 170, -1));
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/Create.png"))); // NOI18N
-        jButton1.setText("Novo");
-        jButton1.setBorder(null);
-        jButton1.setBorderPainted(false);
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.setDefaultCapable(false);
-        jButton1.setMinimumSize(new java.awt.Dimension(100, 300));
-        jButton1.setPreferredSize(new java.awt.Dimension(120, 45));
-        jPanel4.add(jButton1);
+        panelButtons.setBackground(new java.awt.Color(167, 175, 198));
+        panelButtons.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 40, 35));
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/Cancel.png"))); // NOI18N
-        jButton3.setText("Cancelar");
-        jButton3.setBorder(null);
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton3.setEnabled(false);
-        jButton3.setPreferredSize(new java.awt.Dimension(120, 45));
-        jPanel4.add(jButton3);
+        btnNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/Create.png"))); // NOI18N
+        btnNovo.setText("Novo");
+        btnNovo.setBorder(null);
+        btnNovo.setBorderPainted(false);
+        btnNovo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnNovo.setDefaultCapable(false);
+        btnNovo.setMinimumSize(new java.awt.Dimension(100, 300));
+        btnNovo.setPreferredSize(new java.awt.Dimension(120, 45));
+        panelButtons.add(btnNovo);
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/OK.png"))); // NOI18N
-        jButton4.setText("Gravar");
-        jButton4.setEnabled(false);
-        jButton4.setPreferredSize(new java.awt.Dimension(120, 45));
-        jPanel4.add(jButton4);
+        btnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/Cancel.png"))); // NOI18N
+        btnCancelar.setText("Cancelar");
+        btnCancelar.setBorder(null);
+        btnCancelar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        btnCancelar.setEnabled(false);
+        btnCancelar.setPreferredSize(new java.awt.Dimension(120, 45));
+        panelButtons.add(btnCancelar);
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/Find.png"))); // NOI18N
-        jButton5.setText("Buscar");
-        jButton5.setPreferredSize(new java.awt.Dimension(120, 45));
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        btnGravar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/OK.png"))); // NOI18N
+        btnGravar.setText("Gravar");
+        btnGravar.setEnabled(false);
+        btnGravar.setPreferredSize(new java.awt.Dimension(120, 45));
+        panelButtons.add(btnGravar);
+
+        brnBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/Find.png"))); // NOI18N
+        brnBuscar.setText("Buscar");
+        brnBuscar.setPreferredSize(new java.awt.Dimension(120, 45));
+        brnBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                brnBuscarActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton5);
+        panelButtons.add(brnBuscar);
 
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/Exit.png"))); // NOI18N
-        jButton6.setText("Sair");
-        jButton6.setPreferredSize(new java.awt.Dimension(120, 45));
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        btnSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/Exit.png"))); // NOI18N
+        btnSair.setText("Sair");
+        btnSair.setPreferredSize(new java.awt.Dimension(120, 45));
+        btnSair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                btnSairActionPerformed(evt);
             }
         });
-        jPanel4.add(jButton6);
+        panelButtons.add(btnSair);
 
-        javax.swing.GroupLayout jPanelFormulárioLayout = new javax.swing.GroupLayout(jPanelFormulário);
-        jPanelFormulário.setLayout(jPanelFormulárioLayout);
-        jPanelFormulárioLayout.setHorizontalGroup(
-            jPanelFormulárioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelFormulárioLayout.createSequentialGroup()
+        javax.swing.GroupLayout panelConteudoLayout = new javax.swing.GroupLayout(panelConteudo);
+        panelConteudo.setLayout(panelConteudoLayout);
+        panelConteudoLayout.setHorizontalGroup(
+            panelConteudoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelConteudoLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanelFormulárioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(panelConteudoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(panelButtons, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(panelCadastro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanelFormulárioLayout.setVerticalGroup(
-            jPanelFormulárioLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelFormulárioLayout.createSequentialGroup()
+        panelConteudoLayout.setVerticalGroup(
+            panelConteudoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelConteudoLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(panelCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 336, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(panelButtons, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanelFormulário, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        javax.swing.GroupLayout panelTotalLayout = new javax.swing.GroupLayout(panelTotal);
+        panelTotal.setLayout(panelTotalLayout);
+        panelTotalLayout.setHorizontalGroup(
+            panelTotalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(panelTitulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(panelConteudo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        panelTotalLayout.setVerticalGroup(
+            panelTotalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelTotalLayout.createSequentialGroup()
+                .addComponent(panelTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanelFormulário, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(panelConteudo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        getContentPane().add(jPanel2);
+        getContentPane().add(panelTotal);
 
         pack();
         setLocationRelativeTo(null);
@@ -343,13 +335,13 @@ public class CadastroFornecedor extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtRazaoActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+    private void brnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brnBuscarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    }//GEN-LAST:event_brnBuscarActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+    private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    }//GEN-LAST:event_btnSairActionPerformed
 
     /**
      * @param args the command line arguments
@@ -394,22 +386,15 @@ public class CadastroFornecedor extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton brnBuscar;
+    private javax.swing.JButton btnCancelar;
+    private javax.swing.JButton btnGravar;
+    private javax.swing.JButton btnNovo;
+    private javax.swing.JButton btnSair;
     private javax.swing.ButtonGroup grupoSexo;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanelFormulário;
-    private javax.swing.JLabel lblAniver;
     private javax.swing.JLabel lblBairro;
     private javax.swing.JLabel lblCEP;
-    private javax.swing.JLabel lblCPF;
+    private javax.swing.JLabel lblCNPJ;
     private javax.swing.JLabel lblCidade;
     private javax.swing.JLabel lblComplemento;
     private javax.swing.JLabel lblEmail;
@@ -420,7 +405,12 @@ public class CadastroFornecedor extends javax.swing.JFrame {
     private javax.swing.JLabel lblLogradouro;
     private javax.swing.JLabel lblNome;
     private javax.swing.JLabel lblRazaoSocial;
-    private javax.swing.JFormattedTextField txtAniver;
+    private javax.swing.JLabel lblTitulo;
+    private javax.swing.JPanel panelButtons;
+    private javax.swing.JPanel panelCadastro;
+    private javax.swing.JPanel panelConteudo;
+    private javax.swing.JPanel panelTitulo;
+    private javax.swing.JPanel panelTotal;
     private javax.swing.JTextField txtBairro;
     private javax.swing.JFormattedTextField txtCEP;
     private javax.swing.JFormattedTextField txtCNPJ;

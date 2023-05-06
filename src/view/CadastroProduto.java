@@ -13,12 +13,12 @@ import javax.swing.JFrame;
  *
  * @author aluno
  */
-public class CadastroFuncionario extends javax.swing.JFrame {
+public class CadastroProduto extends javax.swing.JFrame {
 
     /**
      * Creates new form TestejFrame
      */
-    public CadastroFuncionario() {
+    public CadastroProduto() {
         initComponents();
         
 
@@ -41,36 +41,12 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         panelCadastro = new javax.swing.JPanel();
         lblID = new javax.swing.JLabel();
         txtId = new javax.swing.JTextField();
-        lblNome = new javax.swing.JLabel();
-        txtNome = new javax.swing.JTextField();
-        lblCPF = new javax.swing.JLabel();
-        txtCPF = new javax.swing.JFormattedTextField();
-        lblRG = new javax.swing.JLabel();
-        txtRG = new javax.swing.JTextField();
-        lblEmail = new javax.swing.JLabel();
-        txtEmail = new javax.swing.JTextField();
-        lblAniver = new javax.swing.JLabel();
-        txtAniver = new javax.swing.JFormattedTextField();
-        lblFone1 = new javax.swing.JLabel();
-        txtFone1 = new javax.swing.JFormattedTextField();
-        lblFone2 = new javax.swing.JLabel();
-        txtFone2 = new javax.swing.JFormattedTextField();
-        lblLogradouro = new javax.swing.JLabel();
-        lblComplemento = new javax.swing.JLabel();
-        txtLogradouro = new javax.swing.JTextField();
-        lblCEP = new javax.swing.JLabel();
-        txtCEP = new javax.swing.JFormattedTextField();
-        txtComplemento = new javax.swing.JTextField();
-        lblCidade = new javax.swing.JLabel();
-        txtCidade = new javax.swing.JTextField();
-        lblBairro = new javax.swing.JLabel();
-        txtBairro = new javax.swing.JTextField();
-        lblUsuario = new javax.swing.JLabel();
-        txtUsuario = new javax.swing.JTextField();
-        lblSenha = new javax.swing.JLabel();
-        lblConfirm = new javax.swing.JLabel();
-        passwordField = new javax.swing.JPasswordField();
-        passwordConfirmField = new javax.swing.JPasswordField();
+        lblDescricao = new javax.swing.JLabel();
+        txtObcervacao = new javax.swing.JTextField();
+        lblUF = new javax.swing.JLabel();
+        txtUF = new javax.swing.JTextField();
+        lblDescricao1 = new javax.swing.JLabel();
+        jComboBox1 = new javax.swing.JComboBox<>();
         panelButtons = new javax.swing.JPanel();
         btnNovo = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
@@ -81,7 +57,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Catina do Zé  - Login");
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setPreferredSize(new java.awt.Dimension(1000, 667));
+        setPreferredSize(new java.awt.Dimension(880, 473));
         setResizable(false);
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
@@ -92,7 +68,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         lblTitulo.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 24)); // NOI18N
         lblTitulo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblTitulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/formulario-de-contato (1).png"))); // NOI18N
-        lblTitulo.setText("   Cadastro de funcionário");
+        lblTitulo.setText("   Cadastro de produto");
 
         javax.swing.GroupLayout panelTituloLayout = new javax.swing.GroupLayout(panelTitulo);
         panelTitulo.setLayout(panelTituloLayout);
@@ -101,7 +77,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
             .addGroup(panelTituloLayout.createSequentialGroup()
                 .addGap(49, 49, 49)
                 .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 810, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(13, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panelTituloLayout.setVerticalGroup(
             panelTituloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -130,136 +106,22 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         });
         panelCadastro.add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 20, 50, -1));
 
-        lblNome.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblNome.setText("Nome");
-        panelCadastro.add(lblNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 50, 30));
+        lblDescricao.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lblDescricao.setText("Descrição");
+        panelCadastro.add(lblDescricao, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, 90, 30));
+        panelCadastro.add(txtObcervacao, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 700, -1));
 
-        txtNome.setMaximumSize(new java.awt.Dimension(64, 22));
-        txtNome.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtNomeActionPerformed(evt);
-            }
-        });
-        panelCadastro.add(txtNome, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 290, -1));
+        lblUF.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lblUF.setText("Código de barras");
+        panelCadastro.add(lblUF, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 130, 140, 30));
+        panelCadastro.add(txtUF, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, 770, -1));
 
-        lblCPF.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblCPF.setText("CPF");
-        panelCadastro.add(lblCPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 70, 50, 30));
+        lblDescricao1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lblDescricao1.setText("Status");
+        panelCadastro.add(lblDescricao1, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 60, 90, 30));
 
-        try {
-            txtCPF.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("###.###.###-##")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        panelCadastro.add(txtCPF, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 100, 120, -1));
-
-        lblRG.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblRG.setText("RG");
-        panelCadastro.add(lblRG, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 70, 50, 30));
-        panelCadastro.add(txtRG, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, 120, -1));
-
-        lblEmail.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblEmail.setText("E-mail");
-        panelCadastro.add(lblEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 50, 30));
-
-        txtEmail.setMaximumSize(new java.awt.Dimension(64, 22));
-        txtEmail.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtEmailActionPerformed(evt);
-            }
-        });
-        panelCadastro.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 290, -1));
-
-        lblAniver.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblAniver.setText("Aniversário");
-        panelCadastro.add(lblAniver, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 150, 120, 30));
-
-        try {
-            txtAniver.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("##/##/####")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        panelCadastro.add(txtAniver, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 180, 120, -1));
-
-        lblFone1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblFone1.setText("Telefone 1");
-        panelCadastro.add(lblFone1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 150, 120, 30));
-
-        try {
-            txtFone1.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("## #####-####")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        panelCadastro.add(txtFone1, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 180, 160, -1));
-
-        lblFone2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblFone2.setText("Telefone 2");
-        panelCadastro.add(lblFone2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 150, 120, 30));
-
-        try {
-            txtFone2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("## #####-####")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        panelCadastro.add(txtFone2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 180, 170, -1));
-
-        lblLogradouro.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblLogradouro.setText("Logradouro");
-        panelCadastro.add(lblLogradouro, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 230, 120, 30));
-
-        lblComplemento.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblComplemento.setText("Complemento");
-        panelCadastro.add(lblComplemento, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 230, 120, 30));
-
-        txtLogradouro.setEnabled(false);
-        panelCadastro.add(txtLogradouro, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 260, 170, -1));
-
-        lblCEP.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblCEP.setText("CEP");
-        panelCadastro.add(lblCEP, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 230, 30, 30));
-
-        try {
-            txtCEP.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("#####-###")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        panelCadastro.add(txtCEP, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 260, 80, -1));
-        panelCadastro.add(txtComplemento, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 260, 170, -1));
-
-        lblCidade.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblCidade.setText("Cidade");
-        panelCadastro.add(lblCidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 230, 120, 30));
-
-        txtCidade.setEnabled(false);
-        panelCadastro.add(txtCidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 260, 150, -1));
-
-        lblBairro.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblBairro.setText("Bairro");
-        panelCadastro.add(lblBairro, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 230, 120, 30));
-
-        txtBairro.setEnabled(false);
-        panelCadastro.add(txtBairro, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 260, 160, -1));
-
-        lblUsuario.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblUsuario.setText("Usuário");
-        panelCadastro.add(lblUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, 70, 30));
-
-        txtUsuario.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtUsuarioActionPerformed(evt);
-            }
-        });
-        panelCadastro.add(txtUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 340, 330, -1));
-
-        lblSenha.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblSenha.setText("Senha");
-        panelCadastro.add(lblSenha, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 310, 70, 30));
-
-        lblConfirm.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblConfirm.setText("Confirmar senha");
-        panelCadastro.add(lblConfirm, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 310, 110, 30));
-        panelCadastro.add(passwordField, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 340, 210, -1));
-        panelCadastro.add(passwordConfirmField, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 340, 210, -1));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        panelCadastro.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 90, -1, -1));
 
         panelButtons.setBackground(new java.awt.Color(167, 175, 198));
         panelButtons.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 40, 35));
@@ -322,9 +184,9 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         panelConteudoLayout.setVerticalGroup(
             panelConteudoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelConteudoLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(panelCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 388, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap()
+                .addComponent(panelCadastro, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(10, 10, 10)
                 .addComponent(panelButtons, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -355,14 +217,6 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtIdActionPerformed
 
-    private void txtEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmailActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtEmailActionPerformed
-
-    private void txtNomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNomeActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtNomeActionPerformed
-
     private void brnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brnBuscarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_brnBuscarActionPerformed
@@ -370,10 +224,6 @@ public class CadastroFuncionario extends javax.swing.JFrame {
     private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnSairActionPerformed
-
-    private void txtUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtUsuarioActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtUsuarioActionPerformed
 
     /**
      * @param args the command line arguments
@@ -392,13 +242,13 @@ public class CadastroFuncionario extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CadastroFuncionario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroProduto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CadastroFuncionario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroProduto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CadastroFuncionario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroProduto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CadastroFuncionario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(CadastroProduto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
         //</editor-fold>
@@ -412,7 +262,7 @@ public class CadastroFuncionario extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CadastroFuncionario().setVisible(true);
+                new CadastroProduto().setVisible(true);
             }
         });
     }
@@ -424,43 +274,19 @@ public class CadastroFuncionario extends javax.swing.JFrame {
     private javax.swing.JButton btnNovo;
     private javax.swing.JButton btnSair;
     private javax.swing.ButtonGroup grupoSexo;
-    private javax.swing.JLabel lblAniver;
-    private javax.swing.JLabel lblBairro;
-    private javax.swing.JLabel lblCEP;
-    private javax.swing.JLabel lblCPF;
-    private javax.swing.JLabel lblCidade;
-    private javax.swing.JLabel lblComplemento;
-    private javax.swing.JLabel lblConfirm;
-    private javax.swing.JLabel lblEmail;
-    private javax.swing.JLabel lblFone1;
-    private javax.swing.JLabel lblFone2;
+    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JLabel lblDescricao;
+    private javax.swing.JLabel lblDescricao1;
     private javax.swing.JLabel lblID;
-    private javax.swing.JLabel lblLogradouro;
-    private javax.swing.JLabel lblNome;
-    private javax.swing.JLabel lblRG;
-    private javax.swing.JLabel lblSenha;
     private javax.swing.JLabel lblTitulo;
-    private javax.swing.JLabel lblUsuario;
+    private javax.swing.JLabel lblUF;
     private javax.swing.JPanel panelButtons;
     private javax.swing.JPanel panelCadastro;
     private javax.swing.JPanel panelConteudo;
     private javax.swing.JPanel panelTitulo;
     private javax.swing.JPanel panelTotal;
-    private javax.swing.JPasswordField passwordConfirmField;
-    private javax.swing.JPasswordField passwordField;
-    private javax.swing.JFormattedTextField txtAniver;
-    private javax.swing.JTextField txtBairro;
-    private javax.swing.JFormattedTextField txtCEP;
-    private javax.swing.JFormattedTextField txtCPF;
-    private javax.swing.JTextField txtCidade;
-    private javax.swing.JTextField txtComplemento;
-    private javax.swing.JTextField txtEmail;
-    private javax.swing.JFormattedTextField txtFone1;
-    private javax.swing.JFormattedTextField txtFone2;
     private javax.swing.JTextField txtId;
-    private javax.swing.JTextField txtLogradouro;
-    private javax.swing.JTextField txtNome;
-    private javax.swing.JTextField txtRG;
-    private javax.swing.JTextField txtUsuario;
+    private javax.swing.JTextField txtObcervacao;
+    private javax.swing.JTextField txtUF;
     // End of variables declaration//GEN-END:variables
 }
