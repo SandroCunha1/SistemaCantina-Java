@@ -8,6 +8,7 @@ package view;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import javax.swing.JFrame;
+import utilities.Utilities;
 
 /**
  *
@@ -21,7 +22,8 @@ public class CadastroBairro extends javax.swing.JFrame {
     public CadastroBairro() {
         initComponents();
         
-
+        utilities.Utilities.ativaDesativa(true, panelButtons);
+        Utilities.limpaComponentes(false, panelCadastro);
     }
 
     /**
@@ -107,19 +109,25 @@ public class CadastroBairro extends javax.swing.JFrame {
         lblDescricao.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblDescricao.setText("Descrição");
         panelCadastro.add(lblDescricao, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 80, 30));
-        panelCadastro.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 780, 20));
+        panelCadastro.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, 780, 30));
 
         panelButtons.setBackground(new java.awt.Color(167, 175, 198));
         panelButtons.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 40, 35));
 
         btnNovo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/Create.png"))); // NOI18N
         btnNovo.setText("Novo");
+        btnNovo.setActionCommand("0");
         btnNovo.setBorder(null);
         btnNovo.setBorderPainted(false);
         btnNovo.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnNovo.setDefaultCapable(false);
         btnNovo.setMinimumSize(new java.awt.Dimension(100, 300));
         btnNovo.setPreferredSize(new java.awt.Dimension(120, 45));
+        btnNovo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNovoActionPerformed(evt);
+            }
+        });
         panelButtons.add(btnNovo);
 
         btnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/Cancel.png"))); // NOI18N
@@ -128,16 +136,27 @@ public class CadastroBairro extends javax.swing.JFrame {
         btnCancelar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         btnCancelar.setEnabled(false);
         btnCancelar.setPreferredSize(new java.awt.Dimension(120, 45));
+        btnCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarActionPerformed(evt);
+            }
+        });
         panelButtons.add(btnCancelar);
 
         btnGravar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/OK.png"))); // NOI18N
         btnGravar.setText("Gravar");
         btnGravar.setEnabled(false);
         btnGravar.setPreferredSize(new java.awt.Dimension(120, 45));
+        btnGravar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGravarActionPerformed(evt);
+            }
+        });
         panelButtons.add(btnGravar);
 
         brnBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/Find.png"))); // NOI18N
         brnBuscar.setText("Buscar");
+        brnBuscar.setActionCommand("0");
         brnBuscar.setPreferredSize(new java.awt.Dimension(120, 45));
         brnBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -148,6 +167,7 @@ public class CadastroBairro extends javax.swing.JFrame {
 
         btnSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/Exit.png"))); // NOI18N
         btnSair.setText("Sair");
+        btnSair.setActionCommand("0");
         btnSair.setPreferredSize(new java.awt.Dimension(120, 45));
         btnSair.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -215,6 +235,24 @@ public class CadastroBairro extends javax.swing.JFrame {
     private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnSairActionPerformed
+
+    private void btnNovoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNovoActionPerformed
+        // TODO add your handling code here:
+        utilities.Utilities.ativaDesativa(false, panelButtons);
+        Utilities.limpaComponentes(true, panelCadastro);
+    }//GEN-LAST:event_btnNovoActionPerformed
+
+    private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
+        // TODO add your handling code here:
+        utilities.Utilities.ativaDesativa(true, panelButtons);
+        Utilities.limpaComponentes(false, panelCadastro);
+    }//GEN-LAST:event_btnCancelarActionPerformed
+
+    private void btnGravarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGravarActionPerformed
+        // TODO add your handling code here:
+        utilities.Utilities.ativaDesativa(true, panelButtons);
+        Utilities.limpaComponentes(false, panelCadastro);
+    }//GEN-LAST:event_btnGravarActionPerformed
 
     /**
      * @param args the command line arguments
