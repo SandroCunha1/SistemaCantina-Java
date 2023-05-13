@@ -65,6 +65,16 @@ public class CadastroProduto extends javax.swing.JFrame {
         panelTotal.setBackground(new java.awt.Color(255, 255, 255));
 
         panelTitulo.setBackground(new java.awt.Color(255, 255, 255));
+        panelTitulo.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
+            public void mouseDragged(java.awt.event.MouseEvent evt) {
+                panelTituloMouseDragged(evt);
+            }
+        });
+        panelTitulo.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                panelTituloMousePressed(evt);
+            }
+        });
 
         lblTitulo.setFont(new java.awt.Font("Yu Gothic UI Semibold", 1, 24)); // NOI18N
         lblTitulo.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -225,6 +235,14 @@ public class CadastroProduto extends javax.swing.JFrame {
     private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnSairActionPerformed
+
+    private void panelTituloMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelTituloMousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_panelTituloMousePressed
+
+    private void panelTituloMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelTituloMouseDragged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_panelTituloMouseDragged
 
     /**
      * @param args the command line arguments
