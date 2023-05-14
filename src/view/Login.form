@@ -93,10 +93,6 @@
               <Dimension value="[313, 385]"/>
             </Property>
           </Properties>
-          <Events>
-            <EventHandler event="mouseDragged" listener="java.awt.event.MouseMotionListener" parameters="java.awt.event.MouseEvent" handler="panelLoginMouseDragged"/>
-            <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="panelLoginMousePressed"/>
-          </Events>
 
           <Layout>
             <DimensionLayout dim="0">
@@ -251,9 +247,6 @@
                   <Border info="null"/>
                 </Property>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtUsuarioActionPerformed"/>
-              </Events>
             </Component>
             <Component class="javax.swing.JPasswordField" name="txtPassword">
               <Properties>

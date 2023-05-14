@@ -5,14 +5,16 @@
  */
 package view;
 
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
-import javax.swing.JFrame;
-import utilities.Utilities;
+import controller.ControllerCadastroBairro;
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 /**
  *
- * @author aluno
+ * @author Sandro
  */
 public class CadastroBairro extends javax.swing.JFrame {
 
@@ -21,9 +23,7 @@ public class CadastroBairro extends javax.swing.JFrame {
      */
     public CadastroBairro() {
         initComponents();
-        
-        utilities.Utilities.ativaDesativa(true, panelButtons);
-        Utilities.limpaComponentes(false, panelCadastro);
+        ControllerCadastroBairro controller = new ControllerCadastroBairro(this);
     }
 
     /**
@@ -49,7 +49,7 @@ public class CadastroBairro extends javax.swing.JFrame {
         btnNovo = new javax.swing.JButton();
         btnCancelar = new javax.swing.JButton();
         btnGravar = new javax.swing.JButton();
-        brnBuscar = new javax.swing.JButton();
+        btnBuscar = new javax.swing.JButton();
         btnSair = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -154,16 +154,16 @@ public class CadastroBairro extends javax.swing.JFrame {
         });
         panelButtons.add(btnGravar);
 
-        brnBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/Find.png"))); // NOI18N
-        brnBuscar.setText("Buscar");
-        brnBuscar.setActionCommand("0");
-        brnBuscar.setPreferredSize(new java.awt.Dimension(120, 45));
-        brnBuscar.addActionListener(new java.awt.event.ActionListener() {
+        btnBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/Find.png"))); // NOI18N
+        btnBuscar.setText("Buscar");
+        btnBuscar.setActionCommand("0");
+        btnBuscar.setPreferredSize(new java.awt.Dimension(120, 45));
+        btnBuscar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                brnBuscarActionPerformed(evt);
+                btnBuscarActionPerformed(evt);
             }
         });
-        panelButtons.add(brnBuscar);
+        panelButtons.add(btnBuscar);
 
         btnSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/Exit.png"))); // NOI18N
         btnSair.setText("Sair");
@@ -228,9 +228,9 @@ public class CadastroBairro extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtIdActionPerformed
 
-    private void brnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brnBuscarActionPerformed
+    private void btnBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBuscarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_brnBuscarActionPerformed
+    }//GEN-LAST:event_btnBuscarActionPerformed
 
     private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
         // TODO add your handling code here:
@@ -238,20 +238,14 @@ public class CadastroBairro extends javax.swing.JFrame {
 
     private void btnNovoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNovoActionPerformed
         // TODO add your handling code here:
-        utilities.Utilities.ativaDesativa(false, panelButtons);
-        Utilities.limpaComponentes(true, panelCadastro);
     }//GEN-LAST:event_btnNovoActionPerformed
 
     private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
         // TODO add your handling code here:
-        utilities.Utilities.ativaDesativa(true, panelButtons);
-        Utilities.limpaComponentes(false, panelCadastro);
     }//GEN-LAST:event_btnCancelarActionPerformed
 
     private void btnGravarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGravarActionPerformed
         // TODO add your handling code here:
-        utilities.Utilities.ativaDesativa(true, panelButtons);
-        Utilities.limpaComponentes(false, panelCadastro);
     }//GEN-LAST:event_btnGravarActionPerformed
 
     /**
@@ -280,13 +274,6 @@ public class CadastroBairro extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(CadastroBairro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -297,7 +284,7 @@ public class CadastroBairro extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton brnBuscar;
+    private javax.swing.JButton btnBuscar;
     private javax.swing.JButton btnCancelar;
     private javax.swing.JButton btnGravar;
     private javax.swing.JButton btnNovo;
@@ -314,4 +301,50 @@ public class CadastroBairro extends javax.swing.JFrame {
     private javax.swing.JPanel panelTotal;
     private javax.swing.JTextField txtId;
     // End of variables declaration//GEN-END:variables
+
+    public JButton getBtnBuscar() {
+        return btnBuscar;
+    }
+
+    public JButton getBtnCancelar() {
+        return btnCancelar;
+    }
+
+    public JButton getBtnGravar() {
+        return btnGravar;
+    }
+
+    public JButton getBtnNovo() {
+        return btnNovo;
+    }
+
+    public JButton getBtnSair() {
+        return btnSair;
+    }
+
+    public ButtonGroup getGrupoSexo() {
+        return grupoSexo;
+    }
+
+    public JLabel getLblDescricao() {
+        return lblDescricao;
+    }
+
+    public JLabel getLblID() {
+        return lblID;
+    }
+
+    public JPanel getPanelButtons() {
+        return panelButtons;
+    }
+
+    public JPanel getPanelCadastro() {
+        return panelCadastro;
+    }
+
+    public JTextField getTxtId() {
+        return txtId;
+    }
+    
+
 }

@@ -5,9 +5,13 @@
  */
 package view;
 
+import controller.ControllerCidade;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JPanel;
 
 /**
  *
@@ -20,7 +24,7 @@ public class CadastroCidade extends javax.swing.JFrame {
      */
     public CadastroCidade() {
         initComponents();
-        
+        ControllerCidade controller = new ControllerCidade(this);
 
     }
 
@@ -279,4 +283,39 @@ public class CadastroCidade extends javax.swing.JFrame {
     private javax.swing.JTextField txtObcervacao;
     private javax.swing.JTextField txtUF;
     // End of variables declaration//GEN-END:variables
+
+    public JButton getBtnBuscar() {
+        return brnBuscar;
+    }
+
+    public JButton getBtnCancelar() {
+        return btnCancelar;
+    }
+
+    public JButton getBtnGravar() {
+        return btnGravar;
+    }
+
+    public JButton getBtnNovo() {
+        return btnNovo;
+    }
+
+    public JButton getBtnSair() {
+        return btnSair;
+    }
+
+    public ButtonGroup getGrupoSexo() {
+        return grupoSexo;
+    }
+
+    public JPanel getPanelButtons() {
+        return panelButtons;
+    }
+
+    public JPanel getPanelCadastro() {
+        return panelCadastro;
+    }
+    
+
+
 }
