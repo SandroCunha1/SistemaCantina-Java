@@ -5,7 +5,7 @@
  */
 package view;
 
-import controller.ControllerCidade;
+import controller.cadastros.ControllerCadastroCidade;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import javax.swing.ButtonGroup;
@@ -24,7 +24,7 @@ public class CadastroCidade extends javax.swing.JFrame {
      */
     public CadastroCidade() {
         initComponents();
-        ControllerCidade controller = new ControllerCidade(this);
+        ControllerCadastroCidade controller = new ControllerCadastroCidade(this);
 
     }
 

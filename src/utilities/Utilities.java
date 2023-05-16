@@ -15,7 +15,10 @@ public class Utilities {
         Component[] componentes = painel.getComponents();
         for (Component componente : componentes) {
             if (componente instanceof JButton) {
-                if (((JButton) componente).getActionCommand() == "0") {
+                if (((JButton) componente).getActionCommand() == "0" 
+                        || ((JButton) componente).getActionCommand() == "Novo"
+                        || ((JButton) componente).getActionCommand() == "Buscar"
+                        || ((JButton) componente).getActionCommand() == "Sair") {
                     componente.setEnabled(ativa);
                 } else {
                     componente.setEnabled(!ativa);

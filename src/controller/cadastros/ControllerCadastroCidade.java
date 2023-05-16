@@ -1,24 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package controller;
+package controller.cadastros;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import utilities.Utilities;
+import view.CadastroBairro;
 import view.CadastroCidade;
 
-/**
- *
- * @author Usuário
- */
-public class ControllerCidade implements ActionListener {
-        //Criando um objeto Global do tipo da tela que iremos controllar
+
+public class ControllerCadastroCidade implements ActionListener {
+
+    //Criando um objeto Global do tipo da tela que iremos controllar
     CadastroCidade telaCadastroCidade;
 
     //Passando a tela que iremos controlar como parametro de invocação
-    public ControllerCidade(CadastroCidade telaCadastroCidade) {
+    public ControllerCadastroCidade(CadastroCidade telaCadastroCidade) {
         //Repassando o valor(tela) do parâmetro para o objeto global
         this.telaCadastroCidade = telaCadastroCidade;
 
@@ -65,4 +60,5 @@ public class ControllerCidade implements ActionListener {
 
         }
     }
+
 }

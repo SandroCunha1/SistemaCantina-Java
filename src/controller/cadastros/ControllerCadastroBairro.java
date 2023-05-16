@@ -1,4 +1,4 @@
-package controller;
+package controller.cadastros;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

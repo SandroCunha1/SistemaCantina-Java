@@ -5,7 +5,7 @@
  */
 package view;
 
-import controller.ControllerCadastroBairro;
+import controller.cadastros.ControllerCadastroBairro;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JLabel;

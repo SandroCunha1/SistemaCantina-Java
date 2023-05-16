@@ -74,9 +74,12 @@ public class Login extends javax.swing.JFrame {
         exitButton.setText("x");
         exitButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        loginButotnBg.setBackground(new java.awt.Color(255, 201, 201));
+        loginButotnBg.setBackground(new java.awt.Color(255, 51, 51));
+        loginButotnBg.setForeground(new java.awt.Color(255, 255, 255));
 
+        loginButton.setBackground(new java.awt.Color(255, 255, 255));
         loginButton.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        loginButton.setForeground(new java.awt.Color(255, 255, 255));
         loginButton.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         loginButton.setText("Login");
         loginButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -251,6 +254,10 @@ public class Login extends javax.swing.JFrame {
 
     public JPanel getPanelLogin() {
         return panelLogin;
+    }
+
+    public JPanel getLoginButotnBg() {
+        return loginButotnBg;
     }
 
     

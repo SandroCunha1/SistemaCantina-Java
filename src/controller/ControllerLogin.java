@@ -1,5 +1,6 @@
 package controller;
 
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
@@ -15,16 +16,26 @@ import view.Menu;
 public class ControllerLogin implements ActionListener, MouseListener, MouseMotionListener  {
     private int mouseX, mouseY;
     Login telaLogin;
+    float btnColor[] = new float[] {0.00F, 0.00F, 0.00F};
+    float btnColorHover[] = new float[] {0.00F, 0.00F, 0.00F};
 
     public ControllerLogin(Login telaLogin) {
         this.telaLogin = telaLogin; 
         addMouseListener();
+        addMouseMotionListener();
+        Color.RGBtoHSB(255,51,51, btnColor);
+        Color.RGBtoHSB(255, 128, 128, btnColorHover);
+        
     }
     
     private void addMouseListener(){
         this.telaLogin.getExitButton().addMouseListener(this);
         this.telaLogin.getLoginButton().addMouseListener(this);
         this.telaLogin.getPanelLogin().addMouseListener(this);
+        this.telaLogin.getLoginButotnBg().addMouseListener(this);
+    }
+    
+    private void addMouseMotionListener(){
         this.telaLogin.getPanelLogin().addMouseMotionListener(this);
     }
 
@@ -58,11 +69,18 @@ public class ControllerLogin implements ActionListener, MouseListener, MouseMoti
 
     @Override
     public void mouseEntered(java.awt.event.MouseEvent e) {
+        if (e.getSource()== this.telaLogin.getLoginButton()) {
+            this.telaLogin.getLoginButotnBg().setBackground(Color.getHSBColor(btnColorHover[0],btnColorHover[1],btnColorHover[2]));
+            this.telaLogin.getLoginButton().setForeground(Color.BLACK);
+        }
         }
 
     @Override
     public void mouseExited(java.awt.event.MouseEvent e) {
-        
+        if (e.getSource()== this.telaLogin.getLoginButton()) {
+            this.telaLogin.getLoginButotnBg().setBackground(Color.getHSBColor(btnColor[0],btnColor[1],btnColor[2]));
+            this.telaLogin.getLoginButton().setForeground(Color.WHITE);
+        }
     }
     
      @Override

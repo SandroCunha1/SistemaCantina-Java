@@ -7,7 +7,14 @@ package view;
 
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JFormattedTextField;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 
 /**
  *
@@ -464,4 +471,358 @@ public class CadastroFuncionario extends javax.swing.JFrame {
     private javax.swing.JTextField txtRG;
     private javax.swing.JTextField txtUsuario;
     // End of variables declaration//GEN-END:variables
+
+    public JButton getBtnBuscar() {
+        return brnBuscar;
+    }
+
+    public void setBrnBuscar(JButton brnBuscar) {
+        this.brnBuscar = brnBuscar;
+    }
+
+    public JButton getBtnCancelar() {
+        return btnCancelar;
+    }
+
+    public void setBtnCancelar(JButton btnCancelar) {
+        this.btnCancelar = btnCancelar;
+    }
+
+    public JButton getBtnGravar() {
+        return btnGravar;
+    }
+
+    public void setBtnGravar(JButton btnGravar) {
+        this.btnGravar = btnGravar;
+    }
+
+    public JButton getBtnNovo() {
+        return btnNovo;
+    }
+
+    public void setBtnNovo(JButton btnNovo) {
+        this.btnNovo = btnNovo;
+    }
+
+    public JButton getBtnSair() {
+        return btnSair;
+    }
+
+    public void setBtnSair(JButton btnSair) {
+        this.btnSair = btnSair;
+    }
+
+    public ButtonGroup getGrupoSexo() {
+        return grupoSexo;
+    }
+
+    public void setGrupoSexo(ButtonGroup grupoSexo) {
+        this.grupoSexo = grupoSexo;
+    }
+
+    public JLabel getLblAniver() {
+        return lblAniver;
+    }
+
+    public void setLblAniver(JLabel lblAniver) {
+        this.lblAniver = lblAniver;
+    }
+
+    public JLabel getLblBairro() {
+        return lblBairro;
+    }
+
+    public void setLblBairro(JLabel lblBairro) {
+        this.lblBairro = lblBairro;
+    }
+
+    public JLabel getLblCEP() {
+        return lblCEP;
+    }
+
+    public void setLblCEP(JLabel lblCEP) {
+        this.lblCEP = lblCEP;
+    }
+
+    public JLabel getLblCPF() {
+        return lblCPF;
+    }
+
+    public void setLblCPF(JLabel lblCPF) {
+        this.lblCPF = lblCPF;
+    }
+
+    public JLabel getLblCidade() {
+        return lblCidade;
+    }
+
+    public void setLblCidade(JLabel lblCidade) {
+        this.lblCidade = lblCidade;
+    }
+
+    public JLabel getLblComplemento() {
+        return lblComplemento;
+    }
+
+    public void setLblComplemento(JLabel lblComplemento) {
+        this.lblComplemento = lblComplemento;
+    }
+
+    public JLabel getLblConfirm() {
+        return lblConfirm;
+    }
+
+    public void setLblConfirm(JLabel lblConfirm) {
+        this.lblConfirm = lblConfirm;
+    }
+
+    public JLabel getLblEmail() {
+        return lblEmail;
+    }
+
+    public void setLblEmail(JLabel lblEmail) {
+        this.lblEmail = lblEmail;
+    }
+
+    public JLabel getLblFone1() {
+        return lblFone1;
+    }
+
+    public void setLblFone1(JLabel lblFone1) {
+        this.lblFone1 = lblFone1;
+    }
+
+    public JLabel getLblFone2() {
+        return lblFone2;
+    }
+
+    public void setLblFone2(JLabel lblFone2) {
+        this.lblFone2 = lblFone2;
+    }
+
+    public JLabel getLblID() {
+        return lblID;
+    }
+
+    public void setLblID(JLabel lblID) {
+        this.lblID = lblID;
+    }
+
+    public JLabel getLblLogradouro() {
+        return lblLogradouro;
+    }
+
+    public void setLblLogradouro(JLabel lblLogradouro) {
+        this.lblLogradouro = lblLogradouro;
+    }
+
+    public JLabel getLblNome() {
+        return lblNome;
+    }
+
+    public void setLblNome(JLabel lblNome) {
+        this.lblNome = lblNome;
+    }
+
+    public JLabel getLblRG() {
+        return lblRG;
+    }
+
+    public void setLblRG(JLabel lblRG) {
+        this.lblRG = lblRG;
+    }
+
+    public JLabel getLblSenha() {
+        return lblSenha;
+    }
+
+    public void setLblSenha(JLabel lblSenha) {
+        this.lblSenha = lblSenha;
+    }
+
+    public JLabel getLblTitulo() {
+        return lblTitulo;
+    }
+
+    public void setLblTitulo(JLabel lblTitulo) {
+        this.lblTitulo = lblTitulo;
+    }
+
+    public JLabel getLblUsuario() {
+        return lblUsuario;
+    }
+
+    public void setLblUsuario(JLabel lblUsuario) {
+        this.lblUsuario = lblUsuario;
+    }
+
+    public JPanel getPanelButtons() {
+        return panelButtons;
+    }
+
+    public void setPanelButtons(JPanel panelButtons) {
+        this.panelButtons = panelButtons;
+    }
+
+    public JPanel getPanelCadastro() {
+        return panelCadastro;
+    }
+
+    public void setPanelCadastro(JPanel panelCadastro) {
+        this.panelCadastro = panelCadastro;
+    }
+
+    public JPanel getPanelConteudo() {
+        return panelConteudo;
+    }
+
+    public void setPanelConteudo(JPanel panelConteudo) {
+        this.panelConteudo = panelConteudo;
+    }
+
+    public JPanel getPanelTitulo() {
+        return panelTitulo;
+    }
+
+    public void setPanelTitulo(JPanel panelTitulo) {
+        this.panelTitulo = panelTitulo;
+    }
+
+    public JPanel getPanelTotal() {
+        return panelTotal;
+    }
+
+    public void setPanelTotal(JPanel panelTotal) {
+        this.panelTotal = panelTotal;
+    }
+
+    public JPasswordField getPasswordConfirmField() {
+        return passwordConfirmField;
+    }
+
+    public void setPasswordConfirmField(JPasswordField passwordConfirmField) {
+        this.passwordConfirmField = passwordConfirmField;
+    }
+
+    public JPasswordField getPasswordField() {
+        return passwordField;
+    }
+
+    public void setPasswordField(JPasswordField passwordField) {
+        this.passwordField = passwordField;
+    }
+
+    public JFormattedTextField getTxtAniver() {
+        return txtAniver;
+    }
+
+    public void setTxtAniver(JFormattedTextField txtAniver) {
+        this.txtAniver = txtAniver;
+    }
+
+    public JTextField getTxtBairro() {
+        return txtBairro;
+    }
+
+    public void setTxtBairro(JTextField txtBairro) {
+        this.txtBairro = txtBairro;
+    }
+
+    public JFormattedTextField getTxtCEP() {
+        return txtCEP;
+    }
+
+    public void setTxtCEP(JFormattedTextField txtCEP) {
+        this.txtCEP = txtCEP;
+    }
+
+    public JFormattedTextField getTxtCPF() {
+        return txtCPF;
+    }
+
+    public void setTxtCPF(JFormattedTextField txtCPF) {
+        this.txtCPF = txtCPF;
+    }
+
+    public JTextField getTxtCidade() {
+        return txtCidade;
+    }
+
+    public void setTxtCidade(JTextField txtCidade) {
+        this.txtCidade = txtCidade;
+    }
+
+    public JTextField getTxtComplemento() {
+        return txtComplemento;
+    }
+
+    public void setTxtComplemento(JTextField txtComplemento) {
+        this.txtComplemento = txtComplemento;
+    }
+
+    public JTextField getTxtEmail() {
+        return txtEmail;
+    }
+
+    public void setTxtEmail(JTextField txtEmail) {
+        this.txtEmail = txtEmail;
+    }
+
+    public JFormattedTextField getTxtFone1() {
+        return txtFone1;
+    }
+
+    public void setTxtFone1(JFormattedTextField txtFone1) {
+        this.txtFone1 = txtFone1;
+    }
+
+    public JFormattedTextField getTxtFone2() {
+        return txtFone2;
+    }
+
+    public void setTxtFone2(JFormattedTextField txtFone2) {
+        this.txtFone2 = txtFone2;
+    }
+
+    public JTextField getTxtId() {
+        return txtId;
+    }
+
+    public void setTxtId(JTextField txtId) {
+        this.txtId = txtId;
+    }
+
+    public JTextField getTxtLogradouro() {
+        return txtLogradouro;
+    }
+
+    public void setTxtLogradouro(JTextField txtLogradouro) {
+        this.txtLogradouro = txtLogradouro;
+    }
+
+    public JTextField getTxtNome() {
+        return txtNome;
+    }
+
+    public void setTxtNome(JTextField txtNome) {
+        this.txtNome = txtNome;
+    }
+
+    public JTextField getTxtRG() {
+        return txtRG;
+    }
+
+    public void setTxtRG(JTextField txtRG) {
+        this.txtRG = txtRG;
+    }
+
+    public JTextField getTxtUsuario() {
+        return txtUsuario;
+    }
+
+    public void setTxtUsuario(JTextField txtUsuario) {
+        this.txtUsuario = txtUsuario;
+    }
+    
+
 }

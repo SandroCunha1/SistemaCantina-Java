@@ -236,6 +236,7 @@ public class Menu extends javax.swing.JFrame {
 
         menuCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/Female.png"))); // NOI18N
         menuCliente.setText("Cliente");
+        menuCliente.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 menuClienteActionPerformed(evt);
@@ -245,28 +246,34 @@ public class Menu extends javax.swing.JFrame {
 
         menuFuncionario.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/Boss.png"))); // NOI18N
         menuFuncionario.setText("Funcionário");
+        menuFuncionario.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuCadastros.add(menuFuncionario);
 
         menuFornecedor.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/Briefcase.png"))); // NOI18N
         menuFornecedor.setText("Fornecedor");
+        menuFornecedor.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuCadastros.add(menuFornecedor);
         menuCadastros.add(jSeparator1);
 
         menuEndereço.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/Blue pin.png"))); // NOI18N
         menuEndereço.setText("Endereço");
+        menuEndereço.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuCadastros.add(menuEndereço);
 
         menuCidade.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/Blue bookmark.png"))); // NOI18N
         menuCidade.setText("Cidade");
+        menuCidade.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuCadastros.add(menuCidade);
 
         menuBairro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/Blue tag.png"))); // NOI18N
         menuBairro.setText("Bairro");
+        menuBairro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuCadastros.add(menuBairro);
         menuCadastros.add(jSeparator2);
 
-        menuProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/shopping-bag.png"))); // NOI18N
+        menuProduto.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/box.png"))); // NOI18N
         menuProduto.setText("Produto");
+        menuProduto.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         menuCadastros.add(menuProduto);
 
         menuBar.add(menuCadastros);

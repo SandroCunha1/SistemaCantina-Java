@@ -15,6 +15,9 @@
                   <Image iconType="3" name="/view/icons/Female.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Cliente"/>
+                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                  <Color id="Hand Cursor"/>
+                </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuClienteActionPerformed"/>
@@ -26,6 +29,9 @@
                   <Image iconType="3" name="/view/icons/Boss.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Funcion&#xe1;rio"/>
+                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                  <Color id="Hand Cursor"/>
+                </Property>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="menuFornecedor">
@@ -34,6 +40,9 @@
                   <Image iconType="3" name="/view/icons/Briefcase.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Fornecedor"/>
+                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                  <Color id="Hand Cursor"/>
+                </Property>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator1">
@@ -44,6 +53,9 @@
                   <Image iconType="3" name="/view/icons/Blue pin.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Endere&#xe7;o"/>
+                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                  <Color id="Hand Cursor"/>
+                </Property>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="menuCidade">
@@ -52,6 +64,9 @@
                   <Image iconType="3" name="/view/icons/Blue bookmark.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Cidade"/>
+                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                  <Color id="Hand Cursor"/>
+                </Property>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JMenuItem" name="menuBairro">
@@ -60,6 +75,9 @@
                   <Image iconType="3" name="/view/icons/Blue tag.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Bairro"/>
+                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                  <Color id="Hand Cursor"/>
+                </Property>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JPopupMenu$Separator" name="jSeparator2">
@@ -67,9 +85,12 @@
             <MenuItem class="javax.swing.JMenuItem" name="menuProduto">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/view/icons/shopping-bag.png"/>
+                  <Image iconType="3" name="/view/icons/box.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Produto"/>
+                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                  <Color id="Hand Cursor"/>
+                </Property>
               </Properties>
             </MenuItem>
           </SubComponents>

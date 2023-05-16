@@ -7,7 +7,13 @@ package view;
 
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 /**
  *
@@ -308,4 +314,166 @@ public class CadastroProduto extends javax.swing.JFrame {
     private javax.swing.JTextField txtObcervacao;
     private javax.swing.JTextField txtUF;
     // End of variables declaration//GEN-END:variables
+
+    public JButton getBtnBuscar() {
+        return brnBuscar;
+    }
+
+    public void setBrnBuscar(JButton brnBuscar) {
+        this.brnBuscar = brnBuscar;
+    }
+
+    public JButton getBtnCancelar() {
+        return btnCancelar;
+    }
+
+    public void setBtnCancelar(JButton btnCancelar) {
+        this.btnCancelar = btnCancelar;
+    }
+
+    public JButton getBtnGravar() {
+        return btnGravar;
+    }
+
+    public void setBtnGravar(JButton btnGravar) {
+        this.btnGravar = btnGravar;
+    }
+
+    public JButton getBtnNovo() {
+        return btnNovo;
+    }
+
+    public void setBtnNovo(JButton btnNovo) {
+        this.btnNovo = btnNovo;
+    }
+
+    public JButton getBtnSair() {
+        return btnSair;
+    }
+
+    public void setBtnSair(JButton btnSair) {
+        this.btnSair = btnSair;
+    }
+
+    public ButtonGroup getGrupoSexo() {
+        return grupoSexo;
+    }
+
+    public void setGrupoSexo(ButtonGroup grupoSexo) {
+        this.grupoSexo = grupoSexo;
+    }
+
+    public JComboBox<String> getjComboBox1() {
+        return jComboBox1;
+    }
+
+    public void setjComboBox1(JComboBox<String> jComboBox1) {
+        this.jComboBox1 = jComboBox1;
+    }
+
+    public JLabel getLblDescricao() {
+        return lblDescricao;
+    }
+
+    public void setLblDescricao(JLabel lblDescricao) {
+        this.lblDescricao = lblDescricao;
+    }
+
+    public JLabel getLblDescricao1() {
+        return lblDescricao1;
+    }
+
+    public void setLblDescricao1(JLabel lblDescricao1) {
+        this.lblDescricao1 = lblDescricao1;
+    }
+
+    public JLabel getLblID() {
+        return lblID;
+    }
+
+    public void setLblID(JLabel lblID) {
+        this.lblID = lblID;
+    }
+
+    public JLabel getLblTitulo() {
+        return lblTitulo;
+    }
+
+    public void setLblTitulo(JLabel lblTitulo) {
+        this.lblTitulo = lblTitulo;
+    }
+
+    public JLabel getLblUF() {
+        return lblUF;
+    }
+
+    public void setLblUF(JLabel lblUF) {
+        this.lblUF = lblUF;
+    }
+
+    public JPanel getPanelButtons() {
+        return panelButtons;
+    }
+
+    public void setPanelButtons(JPanel panelButtons) {
+        this.panelButtons = panelButtons;
+    }
+
+    public JPanel getPanelCadastro() {
+        return panelCadastro;
+    }
+
+    public void setPanelCadastro(JPanel panelCadastro) {
+        this.panelCadastro = panelCadastro;
+    }
+
+    public JPanel getPanelConteudo() {
+        return panelConteudo;
+    }
+
+    public void setPanelConteudo(JPanel panelConteudo) {
+        this.panelConteudo = panelConteudo;
+    }
+
+    public JPanel getPanelTitulo() {
+        return panelTitulo;
+    }
+
+    public void setPanelTitulo(JPanel panelTitulo) {
+        this.panelTitulo = panelTitulo;
+    }
+
+    public JPanel getPanelTotal() {
+        return panelTotal;
+    }
+
+    public void setPanelTotal(JPanel panelTotal) {
+        this.panelTotal = panelTotal;
+    }
+
+    public JTextField getTxtId() {
+        return txtId;
+    }
+
+    public void setTxtId(JTextField txtId) {
+        this.txtId = txtId;
+    }
+
+    public JTextField getTxtObcervacao() {
+        return txtObcervacao;
+    }
+
+    public void setTxtObcervacao(JTextField txtObcervacao) {
+        this.txtObcervacao = txtObcervacao;
+    }
+
+    public JTextField getTxtUF() {
+        return txtUF;
+    }
+
+    public void setTxtUF(JTextField txtUF) {
+        this.txtUF = txtUF;
+    }
+    
+
 }

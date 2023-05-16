@@ -5,9 +5,17 @@
  */
 package view;
 
+import controller.cadastros.ControllerCadastroEndereco;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFormattedTextField;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 /**
  *
@@ -20,7 +28,7 @@ public class CadastroEndereco extends javax.swing.JFrame {
      */
     public CadastroEndereco() {
         initComponents();
-        
+        ControllerCadastroEndereco controller = new ControllerCadastroEndereco(this);
 
     }
 
@@ -307,4 +315,183 @@ public class CadastroEndereco extends javax.swing.JFrame {
     private javax.swing.JTextField txtId;
     private javax.swing.JTextField txtLogradouro;
     // End of variables declaration//GEN-END:variables
+
+    public JButton getBtnBuscar() {
+        return brnBuscar;
+    }
+
+    public void setBrnBuscar(JButton brnBuscar) {
+        this.brnBuscar = brnBuscar;
+    }
+
+    public JButton getBtnCancelar() {
+        return btnCancelar;
+    }
+
+    public void setBtnCancelar(JButton btnCancelar) {
+        this.btnCancelar = btnCancelar;
+    }
+
+    public JButton getBtnGravar() {
+        return btnGravar;
+    }
+
+    public void setBtnGravar(JButton btnGravar) {
+        this.btnGravar = btnGravar;
+    }
+
+    public JButton getBtnNovo() {
+        return btnNovo;
+    }
+
+    public void setBtnNovo(JButton btnNovo) {
+        this.btnNovo = btnNovo;
+    }
+
+    public JButton getBtnSair() {
+        return btnSair;
+    }
+
+    public void setBtnSair(JButton btnSair) {
+        this.btnSair = btnSair;
+    }
+
+    public JComboBox<String> getComboBairro() {
+        return comboBairro;
+    }
+
+    public void setComboBairro(JComboBox<String> comboBairro) {
+        this.comboBairro = comboBairro;
+    }
+
+    public JComboBox<String> getComboCidade() {
+        return comboCidade;
+    }
+
+    public void setComboCidade(JComboBox<String> comboCidade) {
+        this.comboCidade = comboCidade;
+    }
+
+    public ButtonGroup getGrupoSexo() {
+        return grupoSexo;
+    }
+
+    public void setGrupoSexo(ButtonGroup grupoSexo) {
+        this.grupoSexo = grupoSexo;
+    }
+
+    public JLabel getLblBairro() {
+        return lblBairro;
+    }
+
+    public void setLblBairro(JLabel lblBairro) {
+        this.lblBairro = lblBairro;
+    }
+
+    public JLabel getLblCEP() {
+        return lblCEP;
+    }
+
+    public void setLblCEP(JLabel lblCEP) {
+        this.lblCEP = lblCEP;
+    }
+
+    public JLabel getLblCidade() {
+        return lblCidade;
+    }
+
+    public void setLblCidade(JLabel lblCidade) {
+        this.lblCidade = lblCidade;
+    }
+
+    public JLabel getLblID() {
+        return lblID;
+    }
+
+    public void setLblID(JLabel lblID) {
+        this.lblID = lblID;
+    }
+
+    public JLabel getLblLogradouro() {
+        return lblLogradouro;
+    }
+
+    public void setLblLogradouro(JLabel lblLogradouro) {
+        this.lblLogradouro = lblLogradouro;
+    }
+
+    public JLabel getLblTitulo() {
+        return lblTitulo;
+    }
+
+    public void setLblTitulo(JLabel lblTitulo) {
+        this.lblTitulo = lblTitulo;
+    }
+
+    public JPanel getPanelButtons() {
+        return panelButtons;
+    }
+
+    public void setPanelButtons(JPanel panelButtons) {
+        this.panelButtons = panelButtons;
+    }
+
+    public JPanel getPanelCadastro() {
+        return panelCadastro;
+    }
+
+    public void setPanelCadastro(JPanel panelCadastro) {
+        this.panelCadastro = panelCadastro;
+    }
+
+    public JPanel getPanelConteudo() {
+        return panelConteudo;
+    }
+
+    public void setPanelConteudo(JPanel panelConteudo) {
+        this.panelConteudo = panelConteudo;
+    }
+
+    public JPanel getPanelTitulo() {
+        return panelTitulo;
+    }
+
+    public void setPanelTitulo(JPanel panelTitulo) {
+        this.panelTitulo = panelTitulo;
+    }
+
+    public JPanel getPanelTotal() {
+        return panelTotal;
+    }
+
+    public void setPanelTotal(JPanel panelTotal) {
+        this.panelTotal = panelTotal;
+    }
+
+    public JFormattedTextField getTxtCEP() {
+        return txtCEP;
+    }
+
+    public void setTxtCEP(JFormattedTextField txtCEP) {
+        this.txtCEP = txtCEP;
+    }
+
+    public JTextField getTxtId() {
+        return txtId;
+    }
+
+    public void setTxtId(JTextField txtId) {
+        this.txtId = txtId;
+    }
+
+    public JTextField getTxtLogradouro() {
+        return txtLogradouro;
+    }
+
+    public void setTxtLogradouro(JTextField txtLogradouro) {
+        this.txtLogradouro = txtLogradouro;
+    }
+    
+
+
 }
