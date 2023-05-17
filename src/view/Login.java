@@ -1,6 +1,7 @@
 package view;
 
 import controller.ControllerLogin;
+import java.awt.geom.RoundRectangle2D;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
@@ -16,6 +17,7 @@ public class Login extends javax.swing.JFrame {
     public Login() {
         initComponents();
         ControllerLogin controller = new ControllerLogin(this);
+        setShape(new RoundRectangle2D.Double(0, 0, getWidth(), getHeight(), 20, 20));
     }
 
 

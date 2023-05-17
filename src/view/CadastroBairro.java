@@ -6,6 +6,7 @@
 package view;
 
 import controller.cadastros.ControllerCadastroBairro;
+import java.awt.geom.RoundRectangle2D;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -24,6 +25,8 @@ public class CadastroBairro extends javax.swing.JFrame {
     public CadastroBairro() {
         initComponents();
         ControllerCadastroBairro controller = new ControllerCadastroBairro(this);
+        
+        setShape(new RoundRectangle2D.Double(0, 0, getWidth(), getHeight(), 20, 20));
     }
 
     /**

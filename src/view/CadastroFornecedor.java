@@ -8,6 +8,7 @@ package view;
 import controller.cadastros.ControllerCadastroFornecedor;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
+import java.awt.geom.RoundRectangle2D;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JFormattedTextField;
@@ -29,6 +30,7 @@ public class CadastroFornecedor extends javax.swing.JFrame {
         initComponents();
         ControllerCadastroFornecedor controller = new ControllerCadastroFornecedor(this);
 
+        setShape(new RoundRectangle2D.Double(0, 0, getWidth(), getHeight(), 20, 20));
     }
 
     /**

@@ -8,6 +8,7 @@ package view;
 import controller.cadastros.ControllerCadastroCidade;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
+import java.awt.geom.RoundRectangle2D;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -25,6 +26,8 @@ public class CadastroCidade extends javax.swing.JFrame {
     public CadastroCidade() {
         initComponents();
         ControllerCadastroCidade controller = new ControllerCadastroCidade(this);
+        
+        setShape(new RoundRectangle2D.Double(0, 0, getWidth(), getHeight(), 20, 20));
 
     }
 

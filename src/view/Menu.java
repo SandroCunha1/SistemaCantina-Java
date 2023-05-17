@@ -69,8 +69,7 @@ public class Menu extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        panelMenu.setBackground(new java.awt.Color(255, 255, 255));
-        panelMenu.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 255, 255), 3));
+        panelMenu.setBackground(new java.awt.Color(255, 204, 204));
 
         panelCadastro.setBackground(new java.awt.Color(167, 175, 198));
         panelCadastro.setMaximumSize(new java.awt.Dimension(221, 190));
@@ -183,7 +182,7 @@ public class Menu extends javax.swing.JFrame {
             .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 188, Short.MAX_VALUE)
         );
 
-        panelDeslogar.setBackground(new java.awt.Color(255, 255, 255));
+        panelDeslogar.setBackground(new java.awt.Color(255, 204, 204));
         panelDeslogar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         panelDeslogar.setMaximumSize(new java.awt.Dimension(221, 190));
 
@@ -212,32 +211,38 @@ public class Menu extends javax.swing.JFrame {
                 .addGroup(panelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(panelCadastro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(panelAjuda, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
                 .addGroup(panelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(panelMovimentos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(panelCaixa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
                 .addGroup(panelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(panelDeslogar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(panelRelatorios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(8, Short.MAX_VALUE))
+                .addContainerGap(9, Short.MAX_VALUE))
         );
         panelMenuLayout.setVerticalGroup(
             panelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelMenuLayout.createSequentialGroup()
-                .addContainerGap(58, Short.MAX_VALUE)
+                .addContainerGap(60, Short.MAX_VALUE)
                 .addGroup(panelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(panelMovimentos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(panelCadastro, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(panelRelatorios, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 58, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 60, Short.MAX_VALUE)
                 .addGroup(panelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(panelCaixa, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(panelDeslogar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(panelAjuda, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(58, Short.MAX_VALUE))
+                .addContainerGap(61, Short.MAX_VALUE))
         );
 
+        menuBar.setBackground(new java.awt.Color(0, 0, 0));
+        menuBar.setBorder(null);
+        menuBar.setForeground(new java.awt.Color(255, 255, 255));
+
+        menuCadastros.setBackground(new java.awt.Color(0, 0, 0));
+        menuCadastros.setForeground(new java.awt.Color(205, 58, 62));
         menuCadastros.setText("Cadastros");
 
         menuCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/Female.png"))); // NOI18N
@@ -294,15 +299,19 @@ public class Menu extends javax.swing.JFrame {
 
         menuBar.add(menuCadastros);
 
+        menuMovimentos.setForeground(new java.awt.Color(205, 58, 62));
         menuMovimentos.setText("Movimentos");
         menuBar.add(menuMovimentos);
 
+        menuRelatorios.setForeground(new java.awt.Color(205, 58, 62));
         menuRelatorios.setText("Relatórios");
         menuBar.add(menuRelatorios);
 
+        menuAjuda.setForeground(new java.awt.Color(205, 58, 62));
         menuAjuda.setText("Ajuda");
         menuBar.add(menuAjuda);
 
+        menuDeslogar.setForeground(new java.awt.Color(205, 58, 62));
         menuDeslogar.setText("Deslogar");
         menuDeslogar.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         menuDeslogar.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
