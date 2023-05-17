@@ -64,7 +64,7 @@ public class Login extends javax.swing.JFrame {
         Titulo.setFont(new java.awt.Font("Calibri", 1, 24)); // NOI18N
         Titulo.setForeground(new java.awt.Color(255, 255, 255));
         Titulo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        Titulo.setText("Cantina's System");
+        Titulo.setText("Cantina IFSC");
         Titulo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         Titulo.setInheritsPopupMenu(false);
 

@@ -345,6 +345,10 @@ public class CadastroBairro extends javax.swing.JFrame {
     public JTextField getTxtId() {
         return txtId;
     }
+
+    public JPanel getPanelTitulo() {
+        return panelTitulo;
+    }
     
 
 }

@@ -491,7 +491,7 @@ public class CadastroEndereco extends javax.swing.JFrame {
     public void setTxtLogradouro(JTextField txtLogradouro) {
         this.txtLogradouro = txtLogradouro;
     }
-    
+   
 
 
 }

@@ -2,12 +2,16 @@ package controller.cadastros;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
 import utilities.Utilities;
+import view.Busca;
 import view.CadastroCliente;
 
 
 
-public class ControllerCadastroCliente implements ActionListener {
+public class ControllerCadastroCliente implements ActionListener, MouseListener, MouseMotionListener {
 
     //Criando um objeto Global do tipo da tela que iremos controllar
     CadastroCliente telaCadastroCliente;
@@ -32,6 +36,8 @@ public class ControllerCadastroCliente implements ActionListener {
         this.telaCadastroCliente.getBtnCancelar().addActionListener(this);
         this.telaCadastroCliente.getBtnGravar().addActionListener(this);
         this.telaCadastroCliente.getBtnBuscar().addActionListener(this);
+        this.telaCadastroCliente.getPanelTitulo().addMouseListener(this);
+        this.telaCadastroCliente.getPanelTitulo().addMouseMotionListener(this);
     }
 
     @Override
@@ -50,9 +56,9 @@ public class ControllerCadastroCliente implements ActionListener {
             Utilities.limpaComponentes(false, this.telaCadastroCliente.getPanelCadastro());
 
         } else if (e.getSource() == this.telaCadastroCliente.getBtnBuscar()) {
-           // BuscaBairro telaBuscaBairro = new BuscaBairro(null, true);
-            //Inserir o controller da busca d bairros
-            //telaBuscaBairro.setVisible(true);
+            Busca telaBuscaBairro = new Busca(null, true);
+            telaBuscaBairro.setjLabelTitulo("Clientes");
+           telaBuscaBairro.setVisible(true);
             
 
         } else if (e.getSource() == this.telaCadastroCliente.getBtnSair()) {
@@ -60,5 +66,41 @@ public class ControllerCadastroCliente implements ActionListener {
 
         }
     }
+    int mouseX, mouseY;
+    @Override
+    public void mouseClicked(MouseEvent e) {
+        }
+
+    @Override
+    public void mousePressed(MouseEvent e) {
+        if (e.getSource()== this.telaCadastroCliente.getPanelTitulo()) {
+            mouseX = e.getX();
+            mouseY = e.getY();
+        }
+     }
+
+    @Override
+    public void mouseReleased(MouseEvent e) {
+    }
+
+    @Override
+    public void mouseEntered(MouseEvent e) {
+    }
+
+    @Override
+    public void mouseExited(MouseEvent e) {
+    }
+
+    @Override
+    public void mouseDragged(MouseEvent e) {
+         if (e.getSource()== this.telaCadastroCliente.getPanelTitulo()) {
+            this.telaCadastroCliente.setLocation(this.telaCadastroCliente.getX() + e.getX() - mouseX, this.telaCadastroCliente.getY() + e.getY() - mouseY);
+        }
+    }
+
+    @Override
+    public void mouseMoved(MouseEvent e) {
+    }
+
 
 }

@@ -5,6 +5,7 @@
  */
 package view;
 
+import controller.cadastros.ControllerCadastroFornecedor;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import javax.swing.ButtonGroup;
@@ -26,7 +27,7 @@ public class CadastroFornecedor extends javax.swing.JFrame {
      */
     public CadastroFornecedor() {
         initComponents();
-        
+        ControllerCadastroFornecedor controller = new ControllerCadastroFornecedor(this);
 
     }
 

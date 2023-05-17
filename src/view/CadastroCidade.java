@@ -315,6 +315,10 @@ public class CadastroCidade extends javax.swing.JFrame {
     public JPanel getPanelCadastro() {
         return panelCadastro;
     }
+
+    public JPanel getPanelTitulo() {
+        return panelTitulo;
+    }
     
 
 

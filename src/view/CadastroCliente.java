@@ -5,6 +5,7 @@
  */
 package view;
 
+import controller.cadastros.ControllerCadastroCliente;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import javax.swing.ButtonGroup;
@@ -26,7 +27,7 @@ public class CadastroCliente extends javax.swing.JFrame {
      */
     public CadastroCliente() {
         initComponents();
-        
+        ControllerCadastroCliente controller = new ControllerCadastroCliente(this);
 
     }
 
@@ -763,5 +764,5 @@ public class CadastroCliente extends javax.swing.JFrame {
         this.txtRG = txtRG;
     }
     
-
+    
 }

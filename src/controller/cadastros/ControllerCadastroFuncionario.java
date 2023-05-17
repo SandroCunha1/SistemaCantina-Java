@@ -3,6 +3,7 @@ package controller.cadastros;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import utilities.Utilities;
+import view.Busca;
 import view.CadastroFuncionario;
 
 
@@ -50,10 +51,9 @@ public class ControllerCadastroFuncionario implements ActionListener {
             Utilities.limpaComponentes(false, this.telaCadastroFuncionario.getPanelCadastro());
 
         } else if (e.getSource() == this.telaCadastroFuncionario.getBtnBuscar()) {
-           // BuscaBairro telaBuscaBairro = new BuscaBairro(null, true);
-            //Inserir o controller da busca d bairros
-            //telaBuscaBairro.setVisible(true);
-            
+              Busca telaBuscaBairro = new Busca(null, true);
+            telaBuscaBairro.setjLabelTitulo("Funcionarios");
+           telaBuscaBairro.setVisible(true);
 
         } else if (e.getSource() == this.telaCadastroFuncionario.getBtnSair()) {
             this.telaCadastroFuncionario.dispose();

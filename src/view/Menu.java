@@ -5,8 +5,12 @@
  */
 package view;
 
+import controller.ControllerMenu;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
+import javax.swing.JPanel;
 
 /**
  *
@@ -19,9 +23,11 @@ public class Menu extends javax.swing.JFrame {
      */
     public Menu() {
         initComponents();
-        GraphicsDevice device  = GraphicsEnvironment.getLocalGraphicsEnvironment().getDefaultScreenDevice();
-        device.setFullScreenWindow(this);
+        ControllerMenu controller = new ControllerMenu(this);
+        setExtendedState(MAXIMIZED_BOTH);
     }
+    
+ 
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -268,6 +274,16 @@ public class Menu extends javax.swing.JFrame {
         menuBairro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/view/icons/Blue tag.png"))); // NOI18N
         menuBairro.setText("Bairro");
         menuBairro.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        menuBairro.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                menuBairroMouseClicked(evt);
+            }
+        });
+        menuBairro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuBairroActionPerformed(evt);
+            }
+        });
         menuCadastros.add(menuBairro);
         menuCadastros.add(jSeparator2);
 
@@ -311,6 +327,15 @@ public class Menu extends javax.swing.JFrame {
     private void menuClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuClienteActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_menuClienteActionPerformed
+
+    private void menuBairroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuBairroMouseClicked
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_menuBairroMouseClicked
+
+    private void menuBairroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuBairroActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuBairroActionPerformed
 
     /**
      * @param args the command line arguments
@@ -377,4 +402,46 @@ public class Menu extends javax.swing.JFrame {
     private javax.swing.JPanel panelMovimentos;
     private javax.swing.JPanel panelRelatorios;
     // End of variables declaration//GEN-END:variables
+
+    public JMenuItem getMenuBairro() {
+        return menuBairro;
+    }
+
+    public JMenu getMenuCadastros() {
+        return menuCadastros;
+    }
+
+    public JMenuItem getMenuCidade() {
+        return menuCidade;
+    }
+
+    public JMenuItem getMenuCliente() {
+        return menuCliente;
+    }
+
+    public JMenu getMenuDeslogar() {
+        return menuDeslogar;
+    }
+
+    public JMenuItem getMenuEndereco() {
+        return menuEndereço;
+    }
+
+    public JMenuItem getMenuFornecedor() {
+        return menuFornecedor;
+    }
+
+    public JMenuItem getMenuFuncionario() {
+        return menuFuncionario;
+    }
+
+    public JMenuItem getMenuProduto() {
+        return menuProduto;
+    }
+
+    public JPanel getPanelDeslogar() {
+        return panelDeslogar;
+    }
+    
+    
 }
