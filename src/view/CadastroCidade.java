@@ -13,6 +13,7 @@ import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 /**
  *
@@ -222,6 +223,7 @@ public class CadastroCidade extends javax.swing.JFrame {
 
     private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
         // TODO add your handling code here:
+        this.dispose();
     }//GEN-LAST:event_btnSairActionPerformed
 
     /**
@@ -322,7 +324,31 @@ public class CadastroCidade extends javax.swing.JFrame {
     public JPanel getPanelTitulo() {
         return panelTitulo;
     }
-    
 
+    public JTextField getTxtId() {
+        return txtId;
+    }
+
+    public void setTxtId(JTextField txtId) {
+        this.txtId = txtId;
+    }
+
+    public JTextField getTxtObcervacao() {
+        return txtObcervacao;
+    }
+
+    public void setTxtObcervacao(JTextField txtObcervacao) {
+        this.txtObcervacao = txtObcervacao;
+    }
+
+    public JTextField getTxtUF() {
+        return txtUF;
+    }
+
+    public void setTxtUF(JTextField txtUF) {
+        this.txtUF = txtUF;
+    }
+    
+    
 
 }

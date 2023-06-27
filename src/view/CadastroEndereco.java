@@ -139,14 +139,12 @@ public class CadastroEndereco extends javax.swing.JFrame {
         lblBairro.setText("Bairro");
         panelCadastro.add(lblBairro, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 80, 30));
 
-        comboBairro.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         panelCadastro.add(comboBairro, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 760, -1));
 
         lblCidade.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lblCidade.setText("Cidade");
         panelCadastro.add(lblCidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 80, 30));
 
-        comboCidade.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         panelCadastro.add(comboCidade, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 760, -1));
 
         panelButtons.setBackground(new java.awt.Color(167, 175, 198));

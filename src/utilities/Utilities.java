@@ -5,7 +5,6 @@ import javax.swing.JComboBox;
 import javax.swing.JFormattedTextField;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
-import javax.swing.JRadioButton;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
@@ -15,10 +14,10 @@ public class Utilities {
         Component[] componentes = painel.getComponents();
         for (Component componente : componentes) {
             if (componente instanceof JButton) {
-                if (((JButton) componente).getActionCommand() == "0" 
-                        || ((JButton) componente).getActionCommand() == "Novo"
-                        || ((JButton) componente).getActionCommand() == "Buscar"
-                        || ((JButton) componente).getActionCommand() == "Sair") {
+                if (((JButton) componente).getActionCommand().equals("0") 
+                        || "Novo".equals(((JButton) componente).getActionCommand())
+                        || "Buscar".equals(((JButton) componente).getActionCommand())
+                        || "Sair".equals(((JButton) componente).getActionCommand())) {
                     componente.setEnabled(ativa);
                 } else {
                     componente.setEnabled(!ativa);
@@ -42,6 +41,7 @@ public class Utilities {
                 ((JPasswordField) componente).setText("");
             }
            componente.setEnabled(ativa);
+
         }
     }
 }

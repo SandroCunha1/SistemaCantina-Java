@@ -182,7 +182,7 @@ public class CadastroCliente extends javax.swing.JFrame {
         panelCadastro.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 290, -1));
 
         lblAniver.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        lblAniver.setText("Aniversário");
+        lblAniver.setText("Nascimento");
         panelCadastro.add(lblAniver, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 150, 120, 30));
 
         try {
